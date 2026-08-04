@@ -23,6 +23,9 @@ The marketplace contains seven cards: Modal, Supabase Fullstack, Context7,
 Chrome DevTools, Decodo, Envato to R2, and VINTONE Studio. See `catalog.json`
 for the 35 standalone skills and their source families.
 
+The broader Codex and Claude collection remains available in
+[`therealityreport/plugins-and-skills`](https://github.com/therealityreport/plugins-and-skills).
+
 ## Repository layout
 
 - `skills/<skill-name>/` is the flat skills.sh-compatible collection.
