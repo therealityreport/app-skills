@@ -1,6 +1,6 @@
 {
   "name": "chrome-devtools",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Codex Chrome DevTools plugin with route sessions, upstream MCP delegation, live evidence bundles, API discovery, redacted cURL, performance workflows, and sync guardrails.",
   "author": {
     "name": "The Reality Report"

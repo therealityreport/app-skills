@@ -10,13 +10,13 @@ const sourceRoot = path.resolve(process.env.APP_SKILLS_SOURCE_ROOT || "/Users/th
 const repository = "https://github.com/therealityreport/app-skills";
 
 const families = [
-  { name: "modal", displayName: "Modal", category: "Coding", skills: ["modal-platform", "modal-decodo", "modal-browser-runtime", "modal-release-operations"], roots: ["skills", "assets"] },
-  { name: "supabase-fullstack", displayName: "Supabase Fullstack", category: "Productivity", skills: ["supabase-command-surface", "supabase-fullstack-review", "supabase-postgres-performance", "supabase-security-governance"], roots: ["skills", "assets", "docs", ".app.json"] },
-  { name: "context7", displayName: "Context7", category: "Coding", skills: ["context7", "context7-app-integration", "context7-cli", "context7-docs", "context7-mcp-setup", "context7-skills-registry", "context7-troubleshooting"], roots: ["skills", "assets", "agents", "scripts", "tools", ".mcp.json", "PRIVACY.md", "TERMS.md"] },
-  { name: "chrome-devtools", displayName: "Chrome DevTools", category: "Coding", skills: ["chrome-devtools-accessibility", "chrome-devtools-evidence", "chrome-devtools-extension-health", "chrome-devtools-intake", "chrome-devtools-memory", "chrome-devtools-network", "chrome-devtools-performance", "chrome-devtools-repair-loop", "chrome-devtools-runtime"], roots: ["skills", "agents", "docs", "schemas", "src", "test", "tools", "bin", "scripts", "package.json", "package-lock.json", "tsconfig.json"] },
-  { name: "decodo", displayName: "Decodo", category: "Productivity", skills: ["decodo-agent-workflows", "decodo-browser-scrapy", "decodo-mcp-scraping", "decodo-proxy-ops", "decodo-reddit-news-visual", "decodo-sdk-api", "decodo-serp-rank-tracking", "decodo-setup", "decodo-troubleshooting"], roots: ["skills", "agents", "references", "scripts"] },
-  { name: "envato-r2", displayName: "Envato to R2", category: "Coding", skills: ["envato-r2"], roots: ["skills", "assets", "references", "src", "scripts", "tests", "package.json", "package-lock.json", ".env.example", "PRIVACY.md", "TERMS.md", "README.md"] },
-  { name: "vintone-studio", displayName: "VINTONE Studio", category: "Productivity", skills: ["vintone-studio"], roots: ["skills", "assets", "knowledge", "src", "scripts", "tests", "uxp-companion", "package.json", "PRIVACY.md", "TERMS.md", "README.md"] }
+  { name: "modal", version: "1.0.0", displayName: "Modal", category: "Coding", skills: ["modal-platform", "modal-decodo", "modal-browser-runtime", "modal-release-operations"], roots: ["skills", "assets"] },
+  { name: "supabase-fullstack", version: "1.0.0", displayName: "Supabase Fullstack", category: "Productivity", skills: ["supabase-command-surface", "supabase-fullstack-review", "supabase-postgres-performance", "supabase-security-governance"], roots: ["skills", "assets", "docs", ".app.json"] },
+  { name: "context7", version: "0.1.3", displayName: "Context7", category: "Coding", skills: ["context7", "context7-app-integration", "context7-cli", "context7-docs", "context7-mcp-setup", "context7-skills-registry", "context7-troubleshooting"], roots: ["skills", "assets", "agents", "scripts", "tools", ".mcp.json", "PRIVACY.md", "TERMS.md"] },
+  { name: "chrome-devtools", version: "0.1.2", displayName: "Chrome DevTools", category: "Coding", skills: ["chrome-devtools-accessibility", "chrome-devtools-evidence", "chrome-devtools-extension-health", "chrome-devtools-intake", "chrome-devtools-memory", "chrome-devtools-network", "chrome-devtools-performance", "chrome-devtools-repair-loop", "chrome-devtools-runtime"], roots: ["skills", "agents", "docs", "schemas", "src", "test", "tools", "bin", "scripts", "package.json", "package-lock.json", "tsconfig.json"] },
+  { name: "decodo", version: "0.1.0", displayName: "Decodo", category: "Productivity", skills: ["decodo-agent-workflows", "decodo-browser-scrapy", "decodo-mcp-scraping", "decodo-proxy-ops", "decodo-reddit-news-visual", "decodo-sdk-api", "decodo-serp-rank-tracking", "decodo-setup", "decodo-troubleshooting"], roots: ["skills", "agents", "references", "scripts"] },
+  { name: "envato-r2", version: "0.1.2", displayName: "Envato to R2", category: "Coding", skills: ["envato-r2"], roots: ["skills", "assets", "references", "src", "scripts", "tests", "package.json", "package-lock.json", ".env.example", "PRIVACY.md", "TERMS.md", "README.md"] },
+  { name: "vintone-studio", version: "0.1.1", displayName: "VINTONE Studio", category: "Productivity", skills: ["vintone-studio"], roots: ["skills", "assets", "knowledge", "src", "scripts", "tests", "uxp-companion", "package.json", "PRIVACY.md", "TERMS.md", "README.md"] }
 ];
 
 const excludedNames = new Set(["node_modules", "dist", "build", "coverage", ".git", ".DS_Store", ".plan-work"]);
@@ -109,7 +109,7 @@ function removeHeadingSections(text, pattern) {
 function createManifest(family, sourceManifest) {
   const manifest = structuredClone(sourceManifest);
   manifest.name = family.name;
-  manifest.version = normalizeVersion(manifest.version);
+  manifest.version = family.version || normalizeVersion(manifest.version);
   manifest.author = { name: "The Reality Report" };
   manifest.homepage = `${repository}/tree/main/plugins/${family.name}`;
   manifest.repository = repository;
@@ -183,6 +183,11 @@ for (const family of families) {
   }
   const sourceManifest = JSON.parse(fs.readFileSync(path.join(sourceDir, ".codex-plugin", "plugin.json"), "utf8"));
   writeJson(path.join(destination, ".codex-plugin", "plugin.json"), createManifest(family, sourceManifest));
+  if (family.name === "envato-r2") {
+    const contractTest = path.join(destination, "tests", "contract.test.mjs");
+    const testText = fs.readFileSync(contractTest, "utf8").replace(/assert\.equal\(manifest\.version, "[^"]+"\)/, `assert.equal(manifest.version, "${family.version}")`);
+    fs.writeFileSync(contractTest, testText);
+  }
   if (family.name === "supabase-fullstack") {
     const appFile = path.join(destination, ".app.json");
     const appManifest = JSON.parse(fs.readFileSync(appFile, "utf8"));

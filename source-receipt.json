@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "plugins/chrome-devtools/.codex-plugin/plugin.json",
-      "sha256": "9869e5b742d36778ec112d554fdcabd3b3471bf79904e904136ae00fa0d85ff3"
+      "sha256": "f70603f05d65b48e00912b7027dfba1800fa7e5550244c3a7dab4d9c26ee29b7"
     },
     {
       "path": "plugins/chrome-devtools/LICENSE",
@@ -959,7 +959,7 @@
     },
     {
       "path": "plugins/envato-r2/.codex-plugin/plugin.json",
-      "sha256": "8941706eada823db8279361187ba5fd4b386277a592d82cd5d324f048db3fe0b"
+      "sha256": "db82f23a1d4f5cc70fc9777925bb891b22b368ef65e2c09f8cfcbda3bb7c68f4"
     },
     {
       "path": "plugins/envato-r2/.env.example",
@@ -1023,7 +1023,7 @@
     },
     {
       "path": "plugins/envato-r2/tests/contract.test.mjs",
-      "sha256": "512339aceb214d8905ab9c19cbc3bdada8ae8af9230d7f4a9cd51733dca64a85"
+      "sha256": "b52f286b9c50f4e682d4aca4166edd9dd408889bb541985c1071c97e2085919d"
     },
     {
       "path": "plugins/envato-r2/tests/fixtures/storage-state.json",
@@ -1339,7 +1339,7 @@
     },
     {
       "path": "plugins/vintone-studio/.codex-plugin/plugin.json",
-      "sha256": "8c379eb4f8382cff59a158c5c29f37d6b1453d34a01bacf0a4cf48f05af1d5d0"
+      "sha256": "6a13a7fbc6c09e44322bc676419569660b83cadc85df73740697afa0b92f1914"
     },
     {
       "path": "plugins/vintone-studio/.mcp.json",

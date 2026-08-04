@@ -23,7 +23,7 @@ async function text(relative) {
 test("manifest has plugin identity and local entrypoints", async () => {
   const manifest = await json(".codex-plugin/plugin.json");
   assert.equal(manifest.name, "envato-r2");
-  assert.equal(manifest.version, "0.1.1");
+  assert.equal(manifest.version, "0.1.2");
   assert.equal(manifest.skills, "./skills/");
   assert.equal(manifest.mcpServers, "./.mcp.json");
   assert.equal(manifest.interface.displayName, "Envato to R2");

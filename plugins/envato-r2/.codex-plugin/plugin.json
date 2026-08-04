@@ -1,6 +1,6 @@
 {
   "name": "envato-r2",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Search Envato with a user-owned browser session, download licensed assets, and save them to Cloudflare R2.",
   "author": {
     "name": "The Reality Report"
