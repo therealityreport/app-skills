@@ -1,0 +1,27 @@
+{
+  "name": "envato-r2",
+  "version": "0.1.1",
+  "description": "Codex MCP plugin for Envato asset search/download workflows backed by Cloudflare R2.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "envato-r2": "./src/cli.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/envato-r2.mjs && node --check src/server.mjs && node --check src/cli.mjs",
+    "login": "node ./src/cli.mjs login",
+    "check-setup": "node ./src/cli.mjs check",
+    "search": "node ./src/cli.mjs search",
+    "discover-api": "node ./src/cli.mjs discover-api",
+    "download": "node ./src/cli.mjs download",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1093.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "playwright-core": "^1.61.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

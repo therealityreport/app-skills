@@ -1,0 +1,47 @@
+{
+  "name": "supabase-fullstack",
+  "version": "1.0.0",
+  "description": "Connector-aware Supabase command surface for live project access, SQL, migrations, advisors, logs, branches, Edge Functions, RLS, Auth, Storage, Postgres performance, and local project conventions.",
+  "author": {
+    "name": "The Reality Report"
+  },
+  "license": "MIT",
+  "keywords": [
+    "supabase",
+    "postgres",
+    "rls",
+    "auth",
+    "storage",
+    "performance",
+    "migrations",
+    "marketplace",
+    "server",
+    "studio"
+  ],
+  "skills": "./skills/",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Supabase Fullstack",
+    "shortDescription": "Live Supabase connector routing plus fullstack review.",
+    "longDescription": "Provides the editable user-level Supabase command surface. It starts from the shared Supabase App connector for live project access, SQL, migrations, advisors, logs, branches, Edge Functions, keys, and settings when callable; preserves and routes capabilities from supabase/agent-skills, supabase/server, and supabase/supabase; and applies local project conventions, RLS/Auth/Storage guidance, and Postgres performance review.",
+    "developerName": "The Reality Report",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/therealityreport/app-skills/tree/main/plugins/supabase-fullstack",
+    "privacyPolicyURL": "https://github.com/therealityreport/app-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/therealityreport/app-skills/blob/main/TERMS.md",
+    "composerIcon": "./assets/app-icon.svg",
+    "logo": "./assets/app-icon.svg",
+    "defaultPrompt": [
+      "Use Supabase Fullstack to inspect the live Supabase project first, then review RLS, auth, storage, migrations, and Postgres r...",
+      "Check Supabase connector status, list the project schema and advisors, then review security, indexes, locks, and query risks.",
+      "Evaluate this Supabase project with live connector evidence plus Supabase Fullstack local guidance."
+    ],
+    "brandColor": "#3ECF8E"
+  },
+  "homepage": "https://github.com/therealityreport/app-skills/tree/main/plugins/supabase-fullstack",
+  "repository": "https://github.com/therealityreport/app-skills"
+}

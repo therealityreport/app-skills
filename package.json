@@ -1,0 +1,13 @@
+{
+  "name": "@therealityreport/app-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public application-focused skills and Codex plugins.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-release.mjs",
+    "validate": "node scripts/validate-repo.mjs",
+    "test": "npm run validate"
+  },
+  "license": "MIT"
+}

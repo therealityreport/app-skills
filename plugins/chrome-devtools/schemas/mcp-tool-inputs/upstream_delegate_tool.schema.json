@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "routeToken": {
+      "type": "string",
+      "minLength": 1
+    },
+    "connectionMode": {
+      "enum": ["isolated", "autoConnect", "browserUrl", "wsEndpoint"],
+      "default": "isolated"
+    },
+    "pageId": {
+      "type": "string"
+    },
+    "targetId": {
+      "type": "string"
+    },
+    "allowedUrlPatterns": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "blockedUrlPatterns": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "browserUrl": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wsEndpoint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "redactNetworkHeaders": {
+      "type": "boolean",
+      "const": true
+    },
+    "dryRun": {
+      "type": "boolean",
+      "default": false
+    },
+    "timeoutMs": {
+      "type": "integer",
+      "minimum": 1000,
+      "maximum": 60000,
+      "default": 30000
+    },
+    "maxPayloadBytes": {
+      "type": "integer",
+      "minimum": 1024,
+      "maximum": 1048576,
+      "default": 524288
+    },
+    "toolInput": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "reqid": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "requestId": {
+      "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "integer", "minimum": 0 }]
+    },
+    "pageIdx": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000
+    },
+    "pageSize": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 200
+    },
+    "includePreservedRequests": {
+      "type": "boolean"
+    },
+    "includePreservedMessages": {
+      "type": "boolean"
+    },
+    "resourceTypes": {
+      "type": "array",
+      "maxItems": 20,
+      "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+    },
+    "types": {
+      "type": "array",
+      "maxItems": 20,
+      "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+    },
+    "filePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024
+    },
+    "baseFilePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Relative .heapsnapshot path without parent traversal."
+    },
+    "currentFilePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Relative .heapsnapshot path without parent traversal."
+    },
+    "filterName": {
+      "enum": [
+        "objectsRetainedByDetachedDomNodes",
+        "objectsRetainedByConsole",
+        "objectsRetainedByEventHandlers",
+        "objectsRetainedByContexts"
+      ]
+    },
+    "id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "nodeId": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "classIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000
+    },
+    "maxDepth": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 30
+    },
+    "maxNodes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 500
+    },
+    "maxSiblings": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "requestFilePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024
+    },
+    "responseFilePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024
+    },
+    "format": {
+      "enum": ["png", "jpeg", "webp"]
+    },
+    "fullPage": {
+      "type": "boolean"
+    },
+    "quality": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "uid": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "device": {
+      "enum": ["desktop", "mobile"]
+    },
+    "mode": {
+      "enum": ["navigation", "snapshot"]
+    },
+    "outputDirPath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024
+    },
+    "autoStop": {
+      "type": "boolean"
+    },
+    "reload": {
+      "type": "boolean"
+    },
+    "insightName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "insightSetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    }
+  },
+  "required": ["routeToken"]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "chrome-devtools",
+  "version": "0.1.1",
+  "description": "Codex Chrome DevTools plugin with route sessions, upstream MCP delegation, live evidence bundles, API discovery, redacted cURL, performance workflows, and sync guardrails.",
+  "author": {
+    "name": "The Reality Report"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Chrome DevTools",
+    "shortDescription": "Debug Chrome pages with safe route sessions, DevTools evidence, API discovery, and performance checks.",
+    "longDescription": "@ChromeDevTools provides gated Chrome DevTools debugging workflows for Codex: isolated-by-default route sessions, upstream Chrome DevTools MCP delegation, live evidence bundles, API call inventory, redacted cURL generation, Lighthouse and performance summaries, and bounded heap analysis. Profile-connected modes require route-token ownership and URL policy. Heap aliases accept only relative snapshot paths, use bounded pagination, and redact/hash duplicate string values; raw memory debugging is never enabled globally. Live evidence is redaction-first, usage statistics and CrUX are disabled by default, and delegated tools run only after route-token, connection-source, and redaction gates pass.",
+    "developerName": "The Reality Report",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use @ChromeDevTools to inspect page API calls from fixture or gated live evidence.",
+      "Run the @ChromeDevTools upstream MCP doctor for an isolated route.",
+      "Use @ChromeDevTools to build a redaction-first live evidence, Lighthouse, performance, or bounded browser-memory bundle."
+    ],
+    "websiteURL": "https://github.com/therealityreport/app-skills/tree/main/plugins/chrome-devtools",
+    "privacyPolicyURL": "https://github.com/therealityreport/app-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/therealityreport/app-skills/blob/main/TERMS.md"
+  },
+  "keywords": [
+    "chrome",
+    "devtools",
+    "runtime",
+    "network",
+    "performance",
+    "accessibility",
+    "codex"
+  ],
+  "homepage": "https://github.com/therealityreport/app-skills/tree/main/plugins/chrome-devtools",
+  "repository": "https://github.com/therealityreport/app-skills",
+  "license": "MIT"
+}

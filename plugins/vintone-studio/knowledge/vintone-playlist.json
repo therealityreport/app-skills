@@ -1,0 +1,60 @@
+{
+  "version": "vintone-playlist/v1",
+  "playlist": {
+    "title": "VINTONE Tutorials",
+    "source": "Doron Studio tutorial playlist metadata captured as local facts only",
+    "videoCount": 7,
+    "approxTotalDuration": "2h40m"
+  },
+  "videos": [
+    {
+      "id": "tutorial-01",
+      "title": "VINTONE overview and setup",
+      "duration": "unknown",
+      "theme": "Template orientation, layer structure, and the Composite-Dither-Color workflow.",
+      "localTranscriptCopied": false
+    },
+    {
+      "id": "tutorial-02",
+      "title": "Composite artwork setup",
+      "duration": "unknown",
+      "theme": "Placing artwork into COMPOSITE and tuning brightness before coloring.",
+      "localTranscriptCopied": false
+    },
+    {
+      "id": "tutorial-03",
+      "title": "Dither pattern selection",
+      "duration": "unknown",
+      "theme": "Choosing and tuning halftone, grain, diffusion, diamond, or scan-line looks.",
+      "localTranscriptCopied": false
+    },
+    {
+      "id": "tutorial-04",
+      "title": "Color painting and masks",
+      "duration": "unknown",
+      "theme": "Painting PAINT IN MASK layers and using color overlays as ink swatches.",
+      "localTranscriptCopied": false
+    },
+    {
+      "id": "tutorial-05",
+      "title": "Textures and distress",
+      "duration": "unknown",
+      "theme": "Using Worn Plastisol textures and importing extra texture sources safely.",
+      "localTranscriptCopied": false
+    },
+    {
+      "id": "tutorial-06",
+      "title": "Separation workflow",
+      "duration": "unknown",
+      "theme": "Stamping a copy, removing background, cutting per-color layers, and saving print output.",
+      "localTranscriptCopied": false
+    },
+    {
+      "id": "tutorial-07",
+      "title": "Finishing, misregistration, and mockups",
+      "duration": "unknown",
+      "theme": "Vintage misprint styling, mockup placement, and final export expectations.",
+      "localTranscriptCopied": false
+    }
+  ]
+}

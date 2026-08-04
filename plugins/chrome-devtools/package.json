@@ -1,0 +1,35 @@
+{
+  "name": "chrome-devtools",
+  "version": "0.1.1",
+  "description": "Codex Chrome DevTools plugin with evidence bundles, API discovery, and redaction-first CLI/MCP surfaces.",
+  "type": "module",
+  "bin": {
+    "cdt": "./bin/cdt"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\"",
+    "lint": "npm run typecheck",
+    "sync:install": "node scripts/sync-install.mjs --enable-config --sync-scope --inventory-smoke",
+    "sync:install:dry-run": "node scripts/sync-install.mjs --dry-run --enable-config --sync-scope",
+    "sync:install:verify": "node scripts/sync-install.mjs --verify",
+    "sync:startup-check": "node scripts/sync-install.mjs --startup-check",
+    "sync:inventory-smoke": "node scripts/sync-install.mjs --inventory-smoke",
+    "sync:status": "node scripts/sync-install.mjs --startup-check --compact",
+    "sync:plugin-health": "node scripts/sync-install.mjs --global-plugin-health --compact",
+    "sync:repair-prompts": "node scripts/sync-install.mjs --repair-prompt-limits --compact",
+    "sync:repair-runtime-cache": "node scripts/sync-install.mjs --repair-runtime-cache --compact",
+    "sync:repair": "node scripts/sync-install.mjs --repair --compact",
+    "sync:rollback": "node scripts/sync-install.mjs --rollback",
+    "sync:rollback:history": "node scripts/sync-install.mjs --rollback-history --compact",
+    "sync:startup-hook": "node scripts/codex-startup-check.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "chrome-devtools-mcp": "^1.6.0"
+  }
+}

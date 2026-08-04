@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "api_response_read.schema.json",
+  "title": "api_response_read input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "run": {
+      "type": "string",
+      "minLength": 1
+    },
+    "apiCall": {
+      "type": "string",
+      "minLength": 1
+    },
+    "includeBody": {
+      "type": "boolean",
+      "default": false
+    },
+    "maxBodyBytes": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 32768,
+      "default": 0
+    }
+  },
+  "required": ["run", "apiCall"]
+}

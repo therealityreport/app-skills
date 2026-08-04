@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modal Decodo"
+  short_description: "Design Decodo-backed scraping and proxy workflows on Modal."
+  default_prompt: "Use $modal-decodo to design a Decodo-backed Modal scrape worker with safe secrets, retries, storage, and validation."

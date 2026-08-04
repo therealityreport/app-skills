@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modal"
+  short_description: "Design and operate Modal apps, functions, endpoints, and resources."
+  default_prompt: "Use $modal-platform to choose the right Modal primitives, CLI workflow, and deployment surface for this compute or endpoint task."

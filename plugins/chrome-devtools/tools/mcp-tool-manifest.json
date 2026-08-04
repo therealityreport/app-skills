@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2026-06-08",
+  "tools": [
+    {
+      "name": "chrome_health",
+      "title": "Chrome Health",
+      "description": "Report local Chrome, profile, adapter, and bridge readiness without attaching to a live tab.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/chrome_health.schema.json",
+      "capabilities": ["core"],
+      "safety": ["metadata-only", "no-live-attach"]
+    },
+    {
+      "name": "chrome_targets",
+      "title": "Chrome Targets",
+      "description": "List safe previews for candidate Chrome tabs and windows using bounded title, origin, path, profile label, recency, and match reason.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/chrome_targets.schema.json",
+      "capabilities": ["core", "evidence"],
+      "safety": ["safe-target-preview", "no-live-attach"]
+    },
+    {
+      "name": "tab_snapshot",
+      "title": "Tab Snapshot",
+      "description": "Create a fixture or dry-run snapshot request for a selected tab surface.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/tab_snapshot.schema.json",
+      "capabilities": ["core", "evidence"],
+      "safety": ["dry-run-first", "bounded-evidence"]
+    },
+    {
+      "name": "debug_bundle_create",
+      "title": "Create Debug Bundle",
+      "description": "Create a bounded debug bundle from fixture or dry-run evidence sources.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/debug_bundle_create.schema.json",
+      "capabilities": ["evidence"],
+      "safety": ["redaction-required", "bounded-evidence"]
+    },
+    {
+      "name": "debug_bundle_read",
+      "title": "Read Debug Bundle",
+      "description": "Read bundle metadata, timeline, summaries, or safe evidence slices from an existing debug bundle.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/debug_bundle_read.schema.json",
+      "capabilities": ["evidence"],
+      "safety": ["bounded-read", "metadata-first"]
+    },
+    {
+      "name": "debug_bundle_redact",
+      "title": "Redact Debug Bundle",
+      "description": "Apply the plugin redaction policy to an existing debug bundle and return redaction counts.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/debug_bundle_redact.schema.json",
+      "capabilities": ["evidence"],
+      "safety": ["redaction-required"]
+    },
+    {
+      "name": "api_calls_collect",
+      "title": "Collect API Calls",
+      "description": "Collect or replay a bounded API call inventory with optional redacted cURL previews.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/api_calls_collect.schema.json",
+      "capabilities": ["network"],
+      "safety": ["redacted-curl", "metadata-first"]
+    },
+    {
+      "name": "api_call_to_curl",
+      "title": "API Call To cURL",
+      "description": "Convert one captured API call into a redacted cURL command that omits cookies, bearer tokens, API keys, CSRF tokens, session headers, and secret query parameters.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/api_call_to_curl.schema.json",
+      "capabilities": ["network"],
+      "safety": ["redacted-curl"]
+    },
+    {
+      "name": "api_response_read",
+      "title": "Read API Response",
+      "description": "Read safe response metadata and bounded redacted fixture bodies when explicitly permitted.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/api_response_read.schema.json",
+      "capabilities": ["network"],
+      "safety": ["metadata-first", "bounded-body"]
+    },
+    {
+      "name": "debug_run_compare",
+      "title": "Compare Debug Runs",
+      "description": "Compare two debug-run fixtures and summarize API, console, screenshot, timeline, and fingerprint differences.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/debug_run_compare.schema.json",
+      "capabilities": ["evidence", "network"],
+      "safety": ["fixture-compatible", "bounded-diff"]
+    },
+    {
+      "name": "context7_doctor",
+      "title": "Context7 Doctor",
+      "description": "Check Context7 availability and docs/schema drift gates needed by this plugin slice.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/context7_doctor.schema.json",
+      "capabilities": ["core"],
+      "safety": ["metadata-only"],
+      "implementation": "local"
+    },
+    {
+      "name": "upstream_mcp_doctor",
+      "title": "Upstream MCP Doctor",
+      "description": "Report official Chrome DevTools MCP version, category, connection-mode, and safety-flag readiness.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_mcp_doctor.schema.json",
+      "capabilities": ["core"],
+      "safety": ["metadata-only", "no-live-attach"],
+      "implementation": "local"
+    },
+    {
+      "name": "list_network_requests",
+      "title": "List Network Requests",
+      "description": "Delegated alias for official Chrome DevTools MCP list_network_requests. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["network"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "list_network_requests", "category": "network", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_network_request",
+      "title": "Get Network Request",
+      "description": "Delegated alias for official Chrome DevTools MCP get_network_request. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["network"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_network_request", "category": "network", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "list_console_messages",
+      "title": "List Console Messages",
+      "description": "Delegated alias for official Chrome DevTools MCP list_console_messages. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["debugging"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "list_console_messages", "category": "debugging", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "take_snapshot",
+      "title": "Take Snapshot",
+      "description": "Delegated alias for official Chrome DevTools MCP take_snapshot. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["debugging"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "take_snapshot", "category": "debugging", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "take_screenshot",
+      "title": "Take Screenshot",
+      "description": "Delegated alias for official Chrome DevTools MCP take_screenshot. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["debugging"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "take_screenshot", "category": "debugging", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "lighthouse_audit",
+      "title": "Lighthouse Audit",
+      "description": "Delegated alias for official Chrome DevTools MCP lighthouse_audit. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["debugging"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "lighthouse_audit", "category": "debugging", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "performance_start_trace",
+      "title": "Start Performance Trace",
+      "description": "Delegated alias for official Chrome DevTools MCP performance_start_trace. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["performance"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "performance_start_trace", "category": "performance", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "performance_stop_trace",
+      "title": "Stop Performance Trace",
+      "description": "Delegated alias for official Chrome DevTools MCP performance_stop_trace. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["performance"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "performance_stop_trace", "category": "performance", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "performance_analyze_insight",
+      "title": "Analyze Performance Insight",
+      "description": "Delegated alias for official Chrome DevTools MCP performance_analyze_insight. Uses gated live delegation after route-token, connection-source, and redaction gates pass.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["performance"],
+      "safety": ["gated-live-delegation", "requires-route-token", "requires-redacted-network-headers", "bounded-payload", "time-limited", "url-policy-recommended-for-profile-routes"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "performance_analyze_insight", "category": "performance", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "take_heapsnapshot",
+      "title": "Capture Heap Snapshot",
+      "description": "Capture a heap snapshot through the local gated memory route.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "take_heapsnapshot", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_summary",
+      "title": "Heap Snapshot Summary",
+      "description": "Read summary statistics from a locally scoped heap snapshot.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_summary", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_details",
+      "title": "Heap Snapshot Details",
+      "description": "Read paginated heap aggregates with optional retention filters.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_details", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_class_nodes",
+      "title": "Heap Class Nodes",
+      "description": "Read paginated instances of one heap class.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_class_nodes", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_retainers",
+      "title": "Heap Retainers",
+      "description": "Read bounded retainers for one heap node.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_retainers", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "close_heapsnapshot",
+      "title": "Close Heap Snapshot",
+      "description": "Close a locally scoped heap snapshot after analysis to free upstream memory.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "close_heapsnapshot", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_retaining_paths",
+      "title": "Heap Retaining Paths",
+      "description": "Read bounded retaining paths for one heap node.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_retaining_paths", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_edges",
+      "title": "Heap Edges",
+      "description": "Read bounded outgoing references for one heap node.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_edges", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_dominators",
+      "title": "Heap Dominators",
+      "description": "Read a heap node's dominator chain.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_dominators", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "compare_heapsnapshots",
+      "title": "Compare Heap Snapshots",
+      "description": "Compare two locally scoped heap snapshots.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "compare_heapsnapshots", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "get_heapsnapshot_duplicate_strings",
+      "title": "Heap Duplicate Strings",
+      "description": "Find duplicate heap strings with original values redacted and SHA-256 hashed.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "capabilities": ["memory"],
+      "safety": ["gated-live-delegation", "relative-heapsnapshot-paths-only", "memory-debugging-child-only", "duplicate-strings-redacted"],
+      "implementation": "delegate",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "get_heapsnapshot_duplicate_strings", "category": "memory", "minVersion": "1.6.0"}
+    },
+    {
+      "name": "webmcp_tools_list",
+      "title": "List WebMCP Tools",
+      "description": "List page-exposed WebMCP tools as untrusted, discovery-only metadata. Execution is disabled by default.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/page_tools_list.schema.json",
+      "capabilities": ["experimental"],
+      "safety": ["list-only", "execution-disabled", "untrusted-page-tools", "requires-explicit-experimental-enable-later"],
+      "implementation": "local",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "list_webmcp_tools", "category": "webmcp", "minVersion": "1.6.0", "flag": "--categoryExperimentalWebmcp"}
+    },
+    {
+      "name": "third_party_tools_list",
+      "title": "List Third-party Tools",
+      "description": "List page-exposed third-party developer tools as untrusted, discovery-only metadata. Execution is disabled by default.",
+      "inputSchemaRef": "../schemas/mcp-tool-inputs/page_tools_list.schema.json",
+      "capabilities": ["experimental"],
+      "safety": ["list-only", "execution-disabled", "untrusted-page-tools", "requires-explicit-experimental-enable-later"],
+      "implementation": "local",
+      "upstream": {"package": "chrome-devtools-mcp", "tool": "list_3p_developer_tools", "category": "third-party", "minVersion": "1.6.0", "flag": "--categoryExperimentalThirdParty"}
+    }
+  ]
+}

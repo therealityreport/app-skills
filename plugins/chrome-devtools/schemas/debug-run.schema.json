@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DebugRun",
+  "type": "object",
+  "required": ["id", "createdAt", "mode", "target", "symptom", "evidence", "hypotheses", "actions"],
+  "properties": {
+    "id": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "mode": { "enum": ["chrome-plugin", "direct-cdp", "devtools-extension", "local"] },
+    "target": { "type": "object" },
+    "symptom": { "type": "string" },
+    "evidence": { "type": "array" },
+    "hypotheses": { "type": "array" },
+    "actions": { "type": "array" }
+  },
+  "additionalProperties": true
+}

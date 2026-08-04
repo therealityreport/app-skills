@@ -1,0 +1,46 @@
+{
+  "name": "modal",
+  "version": "1.0.0",
+  "description": "Modal skills for designing, building, deploying, and operating Modal apps, jobs, web endpoints, GPU workloads, schedules, storage, and sandboxes.",
+  "author": {
+    "name": "The Reality Report"
+  },
+  "homepage": "https://github.com/therealityreport/app-skills/tree/main/plugins/modal",
+  "repository": "https://github.com/therealityreport/app-skills",
+  "license": "MIT",
+  "keywords": [
+    "modal",
+    "serverless",
+    "python",
+    "gpu",
+    "jobs",
+    "web-endpoints",
+    "sandboxes",
+    "decodo",
+    "scraping",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Modal",
+    "shortDescription": "Design and operate Modal apps, functions, endpoints, and resources.",
+    "longDescription": "Modal helps Codex choose the right Modal primitives, docs, CLI workflow, deployment surface, state model, security boundary, and validation path for Python cloud jobs, web endpoints, GPU inference, schedules, storage, queues, secrets, and sandboxes.",
+    "developerName": "The Reality Report",
+    "category": "Coding",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/therealityreport/app-skills/tree/main/plugins/modal",
+    "privacyPolicyURL": "https://github.com/therealityreport/app-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/therealityreport/app-skills/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Design this workload for Modal.",
+      "Create a Modal deploy checklist.",
+      "Design a Decodo-backed Modal scrape worker."
+    ],
+    "brandColor": "#62DE61",
+    "composerIcon": "./assets/app-icon.svg",
+    "logo": "./assets/app-icon.svg"
+  }
+}

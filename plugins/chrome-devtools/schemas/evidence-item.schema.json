@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceItem",
+  "type": "object",
+  "required": ["id", "kind", "source", "route", "capabilityGroup", "capturedAt", "summary", "redactionStatus"],
+  "properties": {
+    "id": { "type": "string" },
+    "kind": { "type": "string" },
+    "source": { "type": "string" },
+    "route": { "type": "string" },
+    "capabilityGroup": { "type": "string" },
+    "capturedAt": { "type": "string" },
+    "summary": { "type": "string" },
+    "redactionStatus": { "enum": ["not-needed", "redacted", "blocked", "unresolved"] }
+  },
+  "additionalProperties": true
+}

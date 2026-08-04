@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ApiCall",
+  "type": "object",
+  "required": ["id", "pageUrl", "method", "url", "resourceType", "requestHeadersRedacted", "responseBodyCaptured", "fingerprint", "redactionStatus"],
+  "properties": {
+    "id": { "type": "string" },
+    "pageUrl": { "type": "string" },
+    "method": { "type": "string" },
+    "url": { "type": "string" },
+    "resourceType": { "enum": ["xhr", "fetch", "document", "script", "other"] },
+    "status": { "type": "number" },
+    "requestHeadersRedacted": { "type": "object" },
+    "responseHeadersRedacted": { "type": "object" },
+    "requestBodySummary": { "type": "string" },
+    "responseBodySummary": { "type": "string" },
+    "responseBodyCaptured": { "enum": ["none", "metadata-only", "bounded-redacted", "blocked"] },
+    "redactedCurlPath": { "type": "string" },
+    "fingerprint": { "type": "string" },
+    "redactionStatus": { "enum": ["not-needed", "redacted", "blocked", "unresolved"] }
+  },
+  "additionalProperties": true
+}

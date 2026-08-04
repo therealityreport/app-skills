@@ -1,0 +1,40 @@
+{
+  "name": "decodo",
+  "version": "0.1.0",
+  "description": "Decodo scraping, proxy, MCP, and SDK workflows for Codex.",
+  "author": {
+    "name": "The Reality Report"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Decodo",
+    "shortDescription": "Scrape, research, and debug with Decodo.",
+    "longDescription": "Decodo adds Codex skills, MCP configuration, scripts, workflow specs, and references for Decodo web scraping, SERP/rank tracking, Reddit/news/visual workflows, residential proxies, proxy rotation, browser/Scrapy patterns, and safe troubleshooting.",
+    "developerName": "The Reality Report",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Set up Decodo MCP on macOS.",
+      "Run a Decodo MCP live smoke check.",
+      "Debug a Decodo connection."
+    ],
+    "websiteURL": "https://github.com/therealityreport/app-skills/tree/main/plugins/decodo",
+    "privacyPolicyURL": "https://github.com/therealityreport/app-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/therealityreport/app-skills/blob/main/TERMS.md"
+  },
+  "keywords": [
+    "decodo",
+    "scraping",
+    "proxy",
+    "serp",
+    "browser",
+    "codex"
+  ],
+  "homepage": "https://github.com/therealityreport/app-skills/tree/main/plugins/decodo",
+  "repository": "https://github.com/therealityreport/app-skills",
+  "license": "MIT"
+}

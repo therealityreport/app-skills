@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chrome_health.schema.json",
+  "title": "chrome_health input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "type": "string",
+      "description": "Friendly Chrome profile label such as THB, Codex, or TRR."
+    },
+    "includeAdapters": {
+      "type": "boolean",
+      "default": true
+    },
+    "includeRepairHints": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

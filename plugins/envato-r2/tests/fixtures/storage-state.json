@@ -1,0 +1,34 @@
+{
+  "cookies": [
+    {
+      "name": "session",
+      "value": "secret-cookie-value",
+      "domain": ".app.envato.com",
+      "path": "/",
+      "expires": 4102444800,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "expired",
+      "value": "old-cookie-value",
+      "domain": ".app.envato.com",
+      "path": "/",
+      "expires": 1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://app.envato.com",
+      "localStorage": [
+        { "name": "user-preferences", "value": "secret-storage-value" },
+        { "name": "locale", "value": "en" },
+        { "name": "bearer-secret-token-in-key-name", "value": "another-secret-value" }
+      ]
+    }
+  ]
+}

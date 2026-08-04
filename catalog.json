@@ -1,0 +1,84 @@
+{
+  "marketplace": "app-skills",
+  "pluginCount": 7,
+  "skillCount": 35,
+  "plugins": [
+    {
+      "name": "modal",
+      "displayName": "Modal",
+      "skills": [
+        "modal-platform",
+        "modal-decodo",
+        "modal-browser-runtime",
+        "modal-release-operations"
+      ]
+    },
+    {
+      "name": "supabase-fullstack",
+      "displayName": "Supabase Fullstack",
+      "skills": [
+        "supabase-command-surface",
+        "supabase-fullstack-review",
+        "supabase-postgres-performance",
+        "supabase-security-governance"
+      ]
+    },
+    {
+      "name": "context7",
+      "displayName": "Context7",
+      "skills": [
+        "context7",
+        "context7-app-integration",
+        "context7-cli",
+        "context7-docs",
+        "context7-mcp-setup",
+        "context7-skills-registry",
+        "context7-troubleshooting"
+      ]
+    },
+    {
+      "name": "chrome-devtools",
+      "displayName": "Chrome DevTools",
+      "skills": [
+        "chrome-devtools-accessibility",
+        "chrome-devtools-evidence",
+        "chrome-devtools-extension-health",
+        "chrome-devtools-intake",
+        "chrome-devtools-memory",
+        "chrome-devtools-network",
+        "chrome-devtools-performance",
+        "chrome-devtools-repair-loop",
+        "chrome-devtools-runtime"
+      ]
+    },
+    {
+      "name": "decodo",
+      "displayName": "Decodo",
+      "skills": [
+        "decodo-agent-workflows",
+        "decodo-browser-scrapy",
+        "decodo-mcp-scraping",
+        "decodo-proxy-ops",
+        "decodo-reddit-news-visual",
+        "decodo-sdk-api",
+        "decodo-serp-rank-tracking",
+        "decodo-setup",
+        "decodo-troubleshooting"
+      ]
+    },
+    {
+      "name": "envato-r2",
+      "displayName": "Envato to R2",
+      "skills": [
+        "envato-r2"
+      ]
+    },
+    {
+      "name": "vintone-studio",
+      "displayName": "VINTONE Studio",
+      "skills": [
+        "vintone-studio"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "strict": {
+      "type": "boolean"
+    },
+    "expectedVersion": {
+      "type": "string"
+    },
+    "includeCategories": {
+      "type": "boolean"
+    },
+    "connectionMode": {
+      "enum": ["isolated", "autoConnect", "browserUrl", "wsEndpoint"]
+    },
+    "routeToken": {
+      "type": "string",
+      "minLength": 1
+    },
+    "browserUrl": {
+      "type": "string"
+    },
+    "wsEndpoint": {
+      "type": "string"
+    },
+    "allowedUrlPatterns": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "blockedUrlPatterns": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "redactNetworkHeaders": {
+      "type": "boolean",
+      "default": true
+    },
+    "usageStatistics": {
+      "type": "boolean",
+      "default": false
+    },
+    "performanceCrux": {
+      "type": "boolean",
+      "default": false
+    },
+    "experimentalPageIdRouting": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

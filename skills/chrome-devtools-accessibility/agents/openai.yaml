@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chrome DevTools Accessibility"
+  short_description: "Debug page accessibility with gated Chrome DevTools evidence."
+  default_prompt: "Use @ChromeDevTools to debug accessibility labels, focus, keyboard navigation, tap targets, and contrast."

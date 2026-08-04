@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "debug_bundle_read.schema.json",
+  "title": "debug_bundle_read input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "bundle": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Debug bundle id or fixture path."
+    },
+    "section": {
+      "type": "string",
+      "enum": ["metadata", "timeline", "console", "network", "screenshots", "fingerprints", "summary"],
+      "default": "summary"
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 250,
+      "default": 50
+    }
+  },
+  "required": ["bundle"]
+}

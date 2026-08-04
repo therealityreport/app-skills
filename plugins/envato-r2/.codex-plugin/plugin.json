@@ -1,0 +1,43 @@
+{
+  "name": "envato-r2",
+  "version": "0.1.1",
+  "description": "Search Envato with a user-owned browser session, download licensed assets, and save them to Cloudflare R2.",
+  "author": {
+    "name": "The Reality Report"
+  },
+  "homepage": "https://github.com/therealityreport/app-skills/tree/main/plugins/envato-r2",
+  "license": "MIT",
+  "keywords": [
+    "envato",
+    "envato-elements",
+    "cloudflare-r2",
+    "assets",
+    "mcp",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Envato to R2",
+    "shortDescription": "Find Envato assets, diagnose a saved session, and store licensed downloads in R2",
+    "longDescription": "Local Codex plugin for operator-approved Envato asset workflows. It launches a browser session you control, searches app.envato.com, downloads assets through the normal Envato UI, and uploads the asset, license certificate when available, and a metadata manifest to a private Cloudflare R2 bucket. Its optional session diagnostic is local-only and never returns cookie or storage values.",
+    "developerName": "The Reality Report",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/therealityreport/app-skills/tree/main/plugins/envato-r2",
+    "privacyPolicyURL": "https://github.com/therealityreport/app-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/therealityreport/app-skills/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Use Envato to R2 to check my setup or inspect saved-session evidence",
+      "Search Envato for cinematic food stock photos",
+      "Download this Envato asset to my R2 bucket for project Client Website"
+    ],
+    "brandColor": "#0F766E",
+    "composerIcon": "./assets/app-icon.svg",
+    "logo": "./assets/app-icon.svg"
+  },
+  "repository": "https://github.com/therealityreport/app-skills"
+}

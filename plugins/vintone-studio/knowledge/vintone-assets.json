@@ -1,0 +1,54 @@
+{
+  "version": "vintone-assets/v1",
+  "policy": {
+    "storesOnlyReferences": true,
+    "bundledBinaryAssetsAllowed": false,
+    "blockedExtensions": [".psb", ".psd", ".pat"],
+    "note": "Licensed VINTONE files stay on the user's drive. This knowledge file contains placeholders and metadata only."
+  },
+  "assets": [
+    {
+      "id": "asset_dir",
+      "label": "Licensed VINTONE asset folder",
+      "envVar": "VINTONE_ASSET_DIR",
+      "placeholder": "/Volumes/HardDrive/DORON SUPPLY/VINTONE",
+      "requiredForLiveWork": true,
+      "copyIntoPlugin": false
+    },
+    {
+      "id": "blank_template",
+      "label": "Licensed blank VINTONE template",
+      "envVar": "VINTONE_TEMPLATE_PATH",
+      "placeholder": "/path/to/licensed/VINTONE.psb",
+      "expectedNames": ["VINTONE.psb", "VINTONE.psd"],
+      "requiredForLiveWork": true,
+      "copyIntoPlugin": false
+    },
+    {
+      "id": "sample_file",
+      "label": "Licensed VINTONE sample file",
+      "envVar": "VINTONE_SAMPLE_PATH",
+      "placeholder": "/Volumes/HardDrive/DORON SUPPLY/VINTONE/VINTONE SAMPLE FILE.psb",
+      "expectedNames": ["VINTONE SAMPLE FILE.psb"],
+      "requiredForLiveWork": true,
+      "copyIntoPlugin": false
+    },
+    {
+      "id": "patterns",
+      "label": "Licensed VINTONE pattern file",
+      "envVar": "VINTONE_PATTERNS_PATH",
+      "placeholder": "/Volumes/HardDrive/DORON SUPPLY/VINTONE/VINTONE_PATTERNS.pat",
+      "expectedNames": ["VINTONE_PATTERNS.pat"],
+      "requiredForLiveWork": true,
+      "copyIntoPlugin": false
+    },
+    {
+      "id": "output_dir",
+      "label": "Preferred VINTONE output folder",
+      "envVar": "VINTONE_OUTPUT_DIR",
+      "placeholder": "~/Pictures/VINTONE Outputs",
+      "requiredForLiveWork": false,
+      "copyIntoPlugin": false
+    }
+  ]
+}

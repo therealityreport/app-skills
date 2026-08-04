@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modal Release Operations"
+  short_description: "Plan safe Modal release evidence and recovery."
+  default_prompt: "Use $modal-release-operations to prepare a read-only Modal release receipt with history, readiness, logs, canary, and rollback preview."

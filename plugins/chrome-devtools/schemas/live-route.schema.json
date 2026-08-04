@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LiveRouteClaim",
+  "type": "object",
+  "required": [
+    "routeToken",
+    "pageId",
+    "targetId",
+    "profileLabel",
+    "sourceRoute",
+    "owningAgentId",
+    "owningSessionId",
+    "urlPolicyStatus",
+    "claimedAt",
+    "safePreview"
+  ],
+  "properties": {
+    "routeToken": { "type": "string", "minLength": 1 },
+    "routeLabel": { "type": "string", "minLength": 1 },
+    "pageId": { "type": "string", "minLength": 1 },
+    "targetId": { "type": "string", "minLength": 1 },
+    "profileLabel": { "type": "string", "minLength": 1 },
+    "sourceRoute": { "enum": ["@Chrome", "official-mcp", "cdp", "fixture"] },
+    "owningAgentId": { "type": "string", "minLength": 1 },
+    "owningSessionId": { "type": "string", "minLength": 1 },
+    "urlPolicyStatus": { "enum": ["allowed", "blocked", "unconfigured"] },
+    "urlPolicyReason": { "type": "string" },
+    "claimedAt": { "type": "string", "format": "date-time" },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "connectionMode": { "enum": ["isolated", "autoConnect", "browserUrl", "wsEndpoint"] },
+    "status": { "enum": ["active", "expired", "revoked"] },
+    "ownerLabel": { "type": "string", "minLength": 1 },
+    "allowedUrlPatterns": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "blockedUrlPatterns": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "strict": { "type": "boolean" },
+    "ttlMs": { "type": "number", "exclusiveMinimum": 0 },
+    "revokedAt": { "type": "string", "format": "date-time" },
+    "evidencePolicy": { "$ref": "#/$defs/evidencePolicy" },
+    "upstreamCommandPreview": { "$ref": "#/$defs/upstreamCommandPreview" },
+    "safePreview": {
+      "type": "object",
+      "required": [
+        "routeToken",
+        "pageId",
+        "targetId",
+        "profileLabel",
+        "sourceRoute",
+        "owningAgentId",
+        "owningSessionId",
+        "urlPolicyStatus",
+        "claimedAt"
+      ],
+      "properties": {
+        "routeToken": { "type": "string", "minLength": 1 },
+        "routeLabel": { "type": "string", "minLength": 1 },
+        "pageId": { "type": "string", "minLength": 1 },
+        "targetId": { "type": "string", "minLength": 1 },
+        "profileLabel": { "type": "string", "minLength": 1 },
+        "sourceRoute": { "enum": ["@Chrome", "official-mcp", "cdp", "fixture"] },
+        "owningAgentId": { "type": "string", "minLength": 1 },
+        "owningSessionId": { "type": "string", "minLength": 1 },
+        "urlPolicyStatus": { "enum": ["allowed", "blocked", "unconfigured"] },
+        "safeUrl": { "type": "string" },
+        "title": { "type": "string" },
+        "claimedAt": { "type": "string", "format": "date-time" },
+        "expiresAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "evidencePolicy": {
+      "type": "object",
+      "required": [
+        "redactNetworkHeaders",
+        "usageStatistics",
+        "performanceCrux",
+        "experimentalPageIdRouting",
+        "allowScreenshots",
+        "maxEvidenceBytes"
+      ],
+      "properties": {
+        "redactNetworkHeaders": { "type": "boolean" },
+        "usageStatistics": { "type": "boolean" },
+        "performanceCrux": { "type": "boolean" },
+        "experimentalPageIdRouting": { "type": "boolean" },
+        "allowScreenshots": { "type": "boolean" },
+        "maxEvidenceBytes": { "type": "number", "exclusiveMinimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "urlPolicy": {
+      "type": "object",
+      "required": ["status", "allowedUrlPatterns", "blockedUrlPatterns", "strict"],
+      "properties": {
+        "status": { "enum": ["allowed", "blocked", "unconfigured"] },
+        "reason": { "type": "string" },
+        "allowedUrlPatterns": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "blockedUrlPatterns": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "strict": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "upstreamCommandPreview": {
+      "type": "object",
+      "required": [
+        "dryRun",
+        "command",
+        "displayCommand",
+        "connectionMode",
+        "routeToken",
+        "routeLabel",
+        "requiresRouteToken",
+        "requiresUrlPolicy",
+        "urlPolicy",
+        "safety"
+      ],
+      "properties": {
+        "dryRun": { "const": true },
+        "command": {
+          "type": "object",
+          "required": ["command", "args"],
+          "properties": {
+            "command": { "const": "npx" },
+            "args": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "displayCommand": { "type": "string", "minLength": 1 },
+        "connectionMode": { "enum": ["isolated", "autoConnect", "browserUrl", "wsEndpoint"] },
+        "routeToken": { "type": "string", "minLength": 1 },
+        "routeLabel": { "type": "string", "minLength": 1 },
+        "requiresRouteToken": { "type": "boolean" },
+        "requiresUrlPolicy": { "type": "boolean" },
+        "urlPolicy": { "$ref": "#/$defs/urlPolicy" },
+        "safety": {
+          "type": "object",
+          "required": ["redactNetworkHeaders", "usageStatistics", "performanceCrux", "experimentalPageIdRouting"],
+          "properties": {
+            "redactNetworkHeaders": { "type": "boolean" },
+            "usageStatistics": { "type": "boolean" },
+            "performanceCrux": { "type": "boolean" },
+            "experimentalPageIdRouting": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

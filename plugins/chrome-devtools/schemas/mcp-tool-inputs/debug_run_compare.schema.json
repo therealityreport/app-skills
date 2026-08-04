@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "debug_run_compare.schema.json",
+  "title": "debug_run_compare input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "baseline": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "include": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["api", "console", "screenshot", "timeline", "fingerprints"]
+      },
+      "uniqueItems": true,
+      "default": ["api", "console", "timeline"]
+    },
+    "format": {
+      "type": "string",
+      "enum": ["summary", "json"],
+      "default": "summary"
+    }
+  },
+  "required": ["baseline", "candidate"]
+}

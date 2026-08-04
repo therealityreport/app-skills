@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "tab_snapshot.schema.json",
+  "title": "tab_snapshot input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Target alias or selected safe target id."
+    },
+    "profile": {
+      "type": "string"
+    },
+    "include": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["console", "network", "dom", "screenshot", "performance"]
+      },
+      "uniqueItems": true,
+      "default": ["console", "network"]
+    },
+    "dryRun": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": ["target"]
+}

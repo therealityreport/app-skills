@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modal Browser Runtime"
+  short_description: "Build and prove safe Modal browser images."
+  default_prompt: "Use $modal-browser-runtime to plan a pinned Modal browser image and no-state Chromium launch proof."

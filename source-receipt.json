@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": 1,
+  "canonicalSource": "PLUGINS/plugins",
+  "sourceCommit": "89ae98b604d7890f55d29522dcb55f37d44dcf66",
+  "sourceDirty": true,
+  "generatedAt": "deterministic",
+  "files": [
+    {
+      "path": "plugins/chrome-devtools/.codex-plugin/plugin.json",
+      "sha256": "9869e5b742d36778ec112d554fdcabd3b3471bf79904e904136ae00fa0d85ff3"
+    },
+    {
+      "path": "plugins/chrome-devtools/LICENSE",
+      "sha256": "a0dbf77bb516f4fbe097f0800de4131eeaba759536a512877238be91017de83b"
+    },
+    {
+      "path": "plugins/chrome-devtools/agents/chrome-devtools-api-workbench.md",
+      "sha256": "9b4ee7c87c4d832b48548045fb891da3aa4dec2009e1b7d322246a00cb557291"
+    },
+    {
+      "path": "plugins/chrome-devtools/agents/chrome-devtools-bridge-doctor.md",
+      "sha256": "09b151c23bf55929986e25d430f6d79ec8df02d4969b4449cb8a3f86375bc675"
+    },
+    {
+      "path": "plugins/chrome-devtools/agents/chrome-devtools-live-session-doctor.md",
+      "sha256": "a46fc87f155730e6ff192289f3677c8ce6b6d0633e3b0bc1ec3cf77c17ebc484"
+    },
+    {
+      "path": "plugins/chrome-devtools/agents/chrome-devtools-network-analyst.md",
+      "sha256": "50cc08edf4f3cb2b064bbf3d052b2451a248ac2786bfd3dbfb8375592978d0c6"
+    },
+    {
+      "path": "plugins/chrome-devtools/agents/chrome-devtools-performance-analyst.md",
+      "sha256": "722f62eaddf71d6e56ec24e4502346f17f9a2f4d45284ece17db89fd707a6658"
+    },
+    {
+      "path": "plugins/chrome-devtools/agents/chrome-devtools-sync-doctor.md",
+      "sha256": "81a661e615beb2a139d845def577b959858bd2c2554d6d138c148ea89cfd1c97"
+    },
+    {
+      "path": "plugins/chrome-devtools/agents/chrome-devtools-triage.md",
+      "sha256": "44f268c28ccf549f759edc83deaf89cac973ff8762be322eaea84f0fc773c2cf"
+    },
+    {
+      "path": "plugins/chrome-devtools/bin/cdt",
+      "sha256": "5eb3b0059c3f2fb70eb84060e6596203b62f73d48ce5d6e97edad08858004038"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/api-discovery-workbench.md",
+      "sha256": "6a23b1f35ea8a597db464ee0b070c934541835b119f572bfda9fb19259e71d64"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/bridge-doctor.md",
+      "sha256": "a27cad0ee51cf2595a28a146b4fb729c58499f2c0920767d98dbcd6f58972923"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/cli-reference.md",
+      "sha256": "0c96d7ef958246f200e54d2d99bf1cd0ba4c3f26b34e8cfd2e317b9380bba254"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/evidence-timeline.md",
+      "sha256": "813833aa49c0db6d3bdb6e11ea98989274359e0c8e9d8374c62ef83c8fe9ab17"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/install-cache-sync.md",
+      "sha256": "1ae9dfaf9819d37df32d71f3654c1c40b82eaf802375add85e408fd17e2e9930"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/install-state.md",
+      "sha256": "2065a935067ab88f2ebc81ea8818fd5b49bd39119c28c6c8ec79d9cb428c5540"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/live-attach-deferred.md",
+      "sha256": "ea4fae4ea5c098a0e9aba1cff4dc175151816207b88157125e96b9f3a10811eb"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/response-metadata.md",
+      "sha256": "d9d20267f2191421e4b401c7ff98b32160432fc0890b1c72dc50b9001ba29daa"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/rollback-history.md",
+      "sha256": "881b74b4bd722f757ccb6892c5ed3c47ea6bce22613d799340ba3af6e88a0c47"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/safety-and-redaction.md",
+      "sha256": "375e39a6f27568e0bcb426c5a6115d7efd1eca9a71bbc51bf42c75b7712f7ddf"
+    },
+    {
+      "path": "plugins/chrome-devtools/docs/target-preview.md",
+      "sha256": "bdf9020a23cf294133825380d665b76a9c0c0d35b57b8b2d73df859df6bbdd8b"
+    },
+    {
+      "path": "plugins/chrome-devtools/package-lock.json",
+      "sha256": "7947c72d724dc89e595abaf94fefe9c6443f4abafd89e3d248c78757559624e2"
+    },
+    {
+      "path": "plugins/chrome-devtools/package.json",
+      "sha256": "01f21a27095cac79037f10477b9c9cc1c5128fe5f773376f7ede7d4b86a8d397"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/api-call.schema.json",
+      "sha256": "587eccb054dc062c6057e5549c07ed22d329c88f81298245828989032869663d"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/debug-run.schema.json",
+      "sha256": "f07aef728abd26c20df10f705c7dcd4f387d8ba6d7a10a000b9cf1db60e73069"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/evidence-item.schema.json",
+      "sha256": "e5d3d990e4c0fb0d082c4543a1dd2c9f98b89d91eae9f9a8483dca05c40bfa21"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/live-route.schema.json",
+      "sha256": "afaa5590c9766416eff4c68f7cda61e735ce2d50f4cd5c25b68db9d00c6fc32e"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/api_call_to_curl.schema.json",
+      "sha256": "a2106fb23421cceb24a03ab4a9501873d2f45feca0133bb2e79023c97597976f"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/api_calls_collect.schema.json",
+      "sha256": "bf0ef9410c29088195ec1472b2dccfa8ab4cf7911ed10c1be7ac7c7142c6fba6"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/api_response_read.schema.json",
+      "sha256": "faeda50c0cc4ec5532ebdaf3d8fbf3370c06b04dcf753828859e1839fef180bd"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/chrome_health.schema.json",
+      "sha256": "e6f9b5487f168e01de22aa69496750beaac94643e03df090ce85ff08d3cc1015"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/chrome_targets.schema.json",
+      "sha256": "9f6c1c6be1b33d95f5dcaf22c7b8d8933c98bc2b8b7c904fab182a5d8e4cec89"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/context7_doctor.schema.json",
+      "sha256": "90b2e123fcac98d363dd4bfae83c531be6c9db0d33d5ad6f4fdb486ed22f894e"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/debug_bundle_create.schema.json",
+      "sha256": "dc7542f0f253bc65d0fee9d70f4ec300f4a9bc9af4554c6cd7a4e693a7beb1d5"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/debug_bundle_read.schema.json",
+      "sha256": "03f29ffd91abdb95c9628865b651c40077b0b530506b10312e13dcad49f2f78c"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/debug_bundle_redact.schema.json",
+      "sha256": "11e6255883f9d16d2e4b817ecb6274deabd852abbaf2a37bf050a0415e8c75f0"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/debug_run_compare.schema.json",
+      "sha256": "da3781b59d4fafe664a11a3eefc7491b670c1d66ea881e035f433c140514efe2"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/page_tools_list.schema.json",
+      "sha256": "14f02a5d832096f2aee2352625f2f8c6bd6280c6d14ecf80a6a9e695130f2da6"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/tab_snapshot.schema.json",
+      "sha256": "0aa87267aaf21788b1beb415471641b52af6f70b50be23e9cba28b5a23616566"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/upstream_delegate_tool.schema.json",
+      "sha256": "bae3ad43ab20b9cd85f97efed128b17875fc992f8faf5a6e7b96c3c238c844b0"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/upstream_mcp_doctor.schema.json",
+      "sha256": "f58dda5d31160e451d3c0e3c38b7987de7d6961b669ce5701baf4e1a0e2c6227"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/mcp-tools.schema.json",
+      "sha256": "b5e3ab6bf8f2062c99534d18ffc8038e2bebf2d64cf648099fda45bb5cb94044"
+    },
+    {
+      "path": "plugins/chrome-devtools/schemas/page-tools.schema.json",
+      "sha256": "6d74aebb61f30a90e6241f05ea5070a47a0d5e60c1756e0db4632438625402da"
+    },
+    {
+      "path": "plugins/chrome-devtools/scripts/codex-startup-check.mjs",
+      "sha256": "4f34abab26fbd953d8db091ac2460edeb8b3c87abf8c8f8228c5d2f486d44f56"
+    },
+    {
+      "path": "plugins/chrome-devtools/scripts/sync-install.mjs",
+      "sha256": "0d8a06fc9f615c93e92e828a3fc44fbb95f1e116e378fb58290121a4a056501f"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-accessibility/SKILL.md",
+      "sha256": "fbfd5d57d8d8b5af2a859e085337b6596a131679b12e5cf867ed9bf2f639e5e6"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-accessibility/agents/openai.yaml",
+      "sha256": "465ccf5533768961752df25dfafee9396c08483973b8df90c48a2a5de5ae6e3d"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-accessibility/references/a11y-snippets.md",
+      "sha256": "5150a4ba7a3003e16cb21321a4b0ebb985af5b7589f8bbb65d3ec7c5dc8d9830"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-evidence/SKILL.md",
+      "sha256": "71698d5360e333112b093eef25050d901975b097f6e5952968ce9cab987e3adc"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-extension-health/SKILL.md",
+      "sha256": "0792add90bfa0ecd0cab687d6fcf91f33456183c38676e3b2ea387311ea84a01"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-intake/SKILL.md",
+      "sha256": "e7ab6d0b2d39e182801e21b6405702a2c48ea5da5149336299be4ff4ffdc406e"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-memory/SKILL.md",
+      "sha256": "7becf93830b3eaed5afcd6d5c28ab3b2783a0ed4e386012fd55531df1090c537"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-memory/agents/openai.yaml",
+      "sha256": "59fbf3b4aa80093d31f4ff4cf9a5f6093547cf66ef1760ccf7a1825a12084a2b"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-memory/references/common-leaks.md",
+      "sha256": "4cd78e230e17229ac62529d3c86ae95fe92f9eaabce31a0e6951186ee820cdf2"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-memory/references/compare_snapshots.js",
+      "sha256": "ad92deb80899c2ea96745c3f69cf4c33f516c8cac3a7e97fe5f8b52fc2a0aaf9"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-memory/references/memlab.md",
+      "sha256": "317ede2f4f630b2ba8837240b238ce2b7957fad739bd0b74dc40465750f02171"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-memory/references/upstream-memory-tools.md",
+      "sha256": "f0caf1472f177bc98f91884d38b3c23d44b646fcbba4610649c8862e26c5eed3"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-network/SKILL.md",
+      "sha256": "91fe91e985281f5b7b22f1ab90ee419475b2c6ed353171911fffc974b183346f"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-performance/SKILL.md",
+      "sha256": "9f69f623a832c5471230cd72ef31350b8162f0617a9108e427eac7f8eb5f528f"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-performance/references/lcp-debugging.md",
+      "sha256": "3a6d602a05e5a47403c687b3d38fd263ca88d4b91cc517eb5703128621504ae4"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-performance/references/lcp-snippets.md",
+      "sha256": "b0255ded2dde094754897cb7d136d82c05a2c71d2d85bae71b92f3aa9f14331d"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-repair-loop/SKILL.md",
+      "sha256": "1f777699cdc3398ade618dc08415f42cf2ec7c773d76a71d5085ba40d077b2c8"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-repair-loop/references/upstream-troubleshooting.md",
+      "sha256": "a6d5c2af2b49c6b5ad116eebcebfe5ade4ae04f26554ed0b10c9f465453bc27e"
+    },
+    {
+      "path": "plugins/chrome-devtools/skills/chrome-devtools-runtime/SKILL.md",
+      "sha256": "1bfbfbdcc1c50885242cafb297c3a70830b2f04b3c58b58d52db5608070e3ad0"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/cdp/cdp-client.ts",
+      "sha256": "4acfe2f031faa9443f656a696013b44001087d8ed6a0e2eedd4d0b7650ff6962"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/cdp/event-mux.ts",
+      "sha256": "daede6ad0ddb17a5e9f0da8c36de038e6293ae4d198d2cedbf900ea5d438516e"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/cdp/protocol-schema.ts",
+      "sha256": "9ca10705baee22c0d3d16b8ad55a74ba78a8e83babff971970ad760a54c44eea"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/cdp/session-broker.ts",
+      "sha256": "0c2c230c26270acccf473729f44354972a4de941d9ebf39f6c9b93d4864e3fd0"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/chrome/chrome-plugin-adapter.ts",
+      "sha256": "a0d6f80da8fae1e2bc1f5096329601ac1a8b9bd612544c65f64f9a470dc332d3"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/chrome/profile-names.ts",
+      "sha256": "e054a741d34981494e2a0649b4e28662b659cbe9859c2fd5813afa3baf31390f"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/chrome/tab-claiming.ts",
+      "sha256": "7acf8faef0802ed07b9261689ac258cb75b297e74a6d3cde48535c6d6a17880d"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/cli/index.ts",
+      "sha256": "2e487b06ab25d1ab408809b173f2f3f1d441e3df7d83e1d1a6fbde109cb36d4c"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/debug-run-diff.ts",
+      "sha256": "cd1cd3199fe0f386c893297bb0face041d8670aee04a0e1ce5d3df481b7c6cb3"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/error-fingerprint.ts",
+      "sha256": "363d419046d7e7cf2d9717f786c7c5ba2a10bddf3470f6e7e91dde54c14d7fb2"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/evidence-store.ts",
+      "sha256": "df3ac0e6545f362c6faf316ce6abc7ce505338e678e2c79c4f78fa01b0014e5c"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/evidence-timeline.ts",
+      "sha256": "e03fdecf4bc808fec9a49476ddbda220492128f242a09cf05959a8ee30277ae3"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/framework-adapters.ts",
+      "sha256": "356972b5b02ed43d3a3c54990a38c612dff11b15267a103a7619fd8b551bf44e"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/live-collect.ts",
+      "sha256": "e9c604f5563496230da9bc27b73e4136483136f49cbf8c0888be6ff4cbbf0fdf"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/live-routing.ts",
+      "sha256": "93f49cb1f380888ce7e7359e470365622058b9e7be21f865f8a1c97d65eec795"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/redaction-policy.ts",
+      "sha256": "9d2f398d993e2683a0af22a406bca7ab44ff732a4e64cdd507b67b80496e8933"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/source-correlation.ts",
+      "sha256": "996545d281a4f2704a2bbd88e02d971badf48d1dfd39b7441787494d18387ab1"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/target-registry.ts",
+      "sha256": "2d016ba6142d62bc343473e12d4d2a35761956f9484051cc09963b941b805cd4"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/types.ts",
+      "sha256": "c2883757054ccf8e8158ab79d0572e1f23022dd4200c0ddca924d00a6b423bfc"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/core/weekly-regression.ts",
+      "sha256": "2d10e3fb726c5b0fbf08f3e4b9b24b3641f23c776c25def3eaefa193e0629a5d"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/experimental/page-tools.ts",
+      "sha256": "165d5998d97031f12bcd5f353925ed5ae34f8ebfe2a285453b701b8ea59ceaa4"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/mcp/prompts.ts",
+      "sha256": "e24fbc4a9bdc81881689937e795a82590c4226851de99c689bf051c82d09014a"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/mcp/resources.ts",
+      "sha256": "51e326dc1d74fc4e48fbbfa07a72baf8208f048288d23d3bb09e62c77ce76d64"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/mcp/server.ts",
+      "sha256": "c22ce6601eee7ebce89c3bdc93da256a46b077fceaa31e71d50794a55f178b2c"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/mcp/tools.ts",
+      "sha256": "cce3cede3708b2bb003bd2ed42aeb8816747d101014d30bf9597685688c4e3d0"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/network/api-call-inventory.ts",
+      "sha256": "229c66cdc6275d43d7028c8365bdae12d3192901c52801bfe94b7ea7b2a43afb"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/network/curl-export.ts",
+      "sha256": "154557a2c9e12b0c6af829c51cd3203a7d280fe1d5773e5a75d00f1206da37e1"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/network/har-sse.ts",
+      "sha256": "90c75a6faeea3269726c844f3dc4256660c65571801529e5ff82ba49b747101f"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/network/response-capture.ts",
+      "sha256": "e964ea028cdcfee50ec7a96657b0ef1dd07aeff27aeb37ad29fbc30e25e33cd5"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/upstream/chrome-devtools-mcp.ts",
+      "sha256": "ae5b275fd00d2851b60592fd4211c2e0d7f5ed2465f233c7fde6c0771e32ebcd"
+    },
+    {
+      "path": "plugins/chrome-devtools/src/upstream/delegate.ts",
+      "sha256": "8a401f1277b9bafd5d1f2bd3d76274a066a43523751037c69f2f82dbff474997"
+    },
+    {
+      "path": "plugins/chrome-devtools/tools/mcp-tool-manifest.json",
+      "sha256": "08fc0eda0dd2eeef37c820f09a6386c9e9a6e9f6f5b9eefae483ba097103d25a"
+    },
+    {
+      "path": "plugins/chrome-devtools/tsconfig.json",
+      "sha256": "7e6bd61a151797a3adef638ce737cfda84ed004e6c3f7cd3527c92cc6057b0cb"
+    },
+    {
+      "path": "plugins/context7/.codex-plugin/plugin.json",
+      "sha256": "101407f73e509de5ae4653b64a3c1d8eb00df4b15bf274fe4fe36508eb209375"
+    },
+    {
+      "path": "plugins/context7/.mcp.json",
+      "sha256": "ef4943b83be5a54c48d4f78c4ad7096e8e5361905876760cbc78f68789ac3b50"
+    },
+    {
+      "path": "plugins/context7/LICENSE",
+      "sha256": "a0dbf77bb516f4fbe097f0800de4131eeaba759536a512877238be91017de83b"
+    },
+    {
+      "path": "plugins/context7/PRIVACY.md",
+      "sha256": "3251e868cec5af17491a4cc2c0e5d886d70feefcfc5ab0400cdda918ee5bdfb9"
+    },
+    {
+      "path": "plugins/context7/TERMS.md",
+      "sha256": "1764b3a1e661cc2cda38b7665e56fd65706efbb07e4c68a7ef459b4617b174bb"
+    },
+    {
+      "path": "plugins/context7/agents/docs-researcher.md",
+      "sha256": "28c7906347112f02ad5447e877b50619a5df1f5589761baaece51856658ad470"
+    },
+    {
+      "path": "plugins/context7/assets/app-icon.svg",
+      "sha256": "5deee1adfd121ef60cb661935530bf9139a966a28b6a5c2e64cdd65c814211d2"
+    },
+    {
+      "path": "plugins/context7/scripts/.impeccable/hook.cache.json",
+      "sha256": "6906ed3cb01a1d3a5a5be8904af956966ace2d5b9d979b8066dd7f5ed75f165a"
+    },
+    {
+      "path": "plugins/context7/scripts/context7-app-compat-mcp.mjs",
+      "sha256": "afd9037477cbf21024fd14ee8bc7295fcca001452981f04ae671617cd1ba263f"
+    },
+    {
+      "path": "plugins/context7/scripts/doctor-context7-mcp.mjs",
+      "sha256": "b5696ba49ff05f1cd4faeb295bb3ea6735a382a1efb942cfbb8be3daf98cbe6c"
+    },
+    {
+      "path": "plugins/context7/scripts/find-node-tool.sh",
+      "sha256": "270f24fb5d4ecb2105a8a0a59c7bcc2ac91069ecef08dbfd4ff726d59e572b08"
+    },
+    {
+      "path": "plugins/context7/scripts/fixtures/context7-fake-upstream.mjs",
+      "sha256": "a89a658761d5310cd5743cded0742af4a3a6cb615f685522e5f7eaf63ad10e43"
+    },
+    {
+      "path": "plugins/context7/scripts/fixtures/context7-quota-fallback-upstream.mjs",
+      "sha256": "b1414990738802cadcf0edb57166ae6ff28c54e0380f399b50b11b86b7f749bf"
+    },
+    {
+      "path": "plugins/context7/scripts/smoke-context7-app-compat.mjs",
+      "sha256": "23bb9b297297383af52a2a2574c8af8991185a67fd963319a0f473aaad0ac7d7"
+    },
+    {
+      "path": "plugins/context7/scripts/smoke-context7-cli.sh",
+      "sha256": "43733ddaaafb65d311c1c7294c2cdd766a9cf3f21eb044be9a2285eb17cec5ed"
+    },
+    {
+      "path": "plugins/context7/scripts/smoke-context7-mcp.sh",
+      "sha256": "5ade4a672684415a20bcb1d988328eb4bd04f60bdeb5ccf90d1018c8fa13b116"
+    },
+    {
+      "path": "plugins/context7/scripts/start-context7-mcp.sh",
+      "sha256": "d4aac0fcb8574a9143d0f9b073256d8aafada2412b3a05b25a5585b7f7f8a1cf"
+    },
+    {
+      "path": "plugins/context7/scripts/stdio-lifecycle.mjs",
+      "sha256": "5651a080a607edd295d7ca26ff6f03e6280e4c0e3e410cce66e1d179fd6d0a6c"
+    },
+    {
+      "path": "plugins/context7/scripts/test-context7-app-relay.mjs",
+      "sha256": "0b622ddd7034cdba149af1095308ebaf78324c3e6efc62a638c2863c357888b0"
+    },
+    {
+      "path": "plugins/context7/scripts/test-context7-quota-fallback.mjs",
+      "sha256": "7f5d59f768ffc897255465fb552642741aa4cca5529b75946a3cd47e7c0bc2dc"
+    },
+    {
+      "path": "plugins/context7/scripts/validate-plugin.mjs",
+      "sha256": "bfe52aa2c989bf6129efd24c69729a1ef1aed8e01c183c10fcd3d792ec3683c0"
+    },
+    {
+      "path": "plugins/context7/skills/context7/SKILL.md",
+      "sha256": "889d259f896c5fdb244569a4bca4514b4fc3de063903a3025e1ee40c1f229004"
+    },
+    {
+      "path": "plugins/context7/skills/context7/references/privacy.md",
+      "sha256": "85fc65aaed8e54cfe96e73edc77eb08085847be120cc0b03080aa9044de2ac9d"
+    },
+    {
+      "path": "plugins/context7/skills/context7/references/routing.md",
+      "sha256": "314bd5edba8435602d805bd02c36dcd1290badd6e97a867d8f69faaba3a7e9eb"
+    },
+    {
+      "path": "plugins/context7/skills/context7-app-integration/SKILL.md",
+      "sha256": "476bb45abb6d019d91155f78736dd822344561bd8435c76f6a8452ce0a43d240"
+    },
+    {
+      "path": "plugins/context7/skills/context7-app-integration/references/sdk-and-ai-sdk.md",
+      "sha256": "de678075ce8dc0a674c8b04e9b67fc1a084765ead164714e42c428435107aa2a"
+    },
+    {
+      "path": "plugins/context7/skills/context7-cli/SKILL.md",
+      "sha256": "faab8c1a68a8ed8d325e496df26e1fcdc1b474837635a72af08d76648f2d975d"
+    },
+    {
+      "path": "plugins/context7/skills/context7-cli/references/auth.md",
+      "sha256": "6ca2fc19ce4c872e464ef1b7cf11f589981b077d710c50e9e1aec2a9696bf45e"
+    },
+    {
+      "path": "plugins/context7/skills/context7-cli/references/docs-commands.md",
+      "sha256": "de81f93faec07e1af6c946a771615bb61a653aa271f829d3b67bab17023382ef"
+    },
+    {
+      "path": "plugins/context7/skills/context7-cli/references/setup-commands.md",
+      "sha256": "0885a82a9d6fde514298448b0e328884fb0cc294b27b4c2b34f920119f7e90c3"
+    },
+    {
+      "path": "plugins/context7/skills/context7-docs/SKILL.md",
+      "sha256": "4f88f16c1474156a4225735d7e3154ac8b84b332cc2b93507c343d419c2120d3"
+    },
+    {
+      "path": "plugins/context7/skills/context7-docs/references/mcp-workflow.md",
+      "sha256": "694bea9280dca80cbc7efd51242aebf1f949225d8ca8c66c754809ffd5fb706d"
+    },
+    {
+      "path": "plugins/context7/skills/context7-docs/references/output-style.md",
+      "sha256": "92ccdeb7f0744cf85d8f6a0b93075faa0c65a245477043a77da278cee0902d40"
+    },
+    {
+      "path": "plugins/context7/skills/context7-mcp-setup/SKILL.md",
+      "sha256": "bf1d73ac1bf6f1cf0451d992645e2a8ee82e34727b1689b5e88533602d8c9271"
+    },
+    {
+      "path": "plugins/context7/skills/context7-mcp-setup/references/codex-plugin-mcp.md",
+      "sha256": "d0ba9685fcc0ead74a34fe450644bc690ff9e9318e266f2a8ae711728a5b1a6f"
+    },
+    {
+      "path": "plugins/context7/skills/context7-mcp-setup/references/hosted-http.md",
+      "sha256": "cbe1954973ab125adfe4cbc3b4cf502cde6007385ecb1d543eca379ca74fed9a"
+    },
+    {
+      "path": "plugins/context7/skills/context7-mcp-setup/references/stdio-wrapper.md",
+      "sha256": "5fd4ff70e04990d3cf1e75973e325e1ad841698ef7fb5bb4f4655802dc889431"
+    },
+    {
+      "path": "plugins/context7/skills/context7-skills-registry/SKILL.md",
+      "sha256": "812b39cc389aba77653a1170c1164d31b53f4a55be5349d16b9e207fb2ee5fd0"
+    },
+    {
+      "path": "plugins/context7/skills/context7-skills-registry/references/search-install-remove.md",
+      "sha256": "3b66396b5da74a54c318d0427533b12b89ae8f20d81379be36ab4343b00b84b3"
+    },
+    {
+      "path": "plugins/context7/skills/context7-skills-registry/references/trust-and-blocking.md",
+      "sha256": "d067826a188c57d7c93e8412baab11e4f269e1fd6a57452db2e19b8ebd957ce4"
+    },
+    {
+      "path": "plugins/context7/skills/context7-troubleshooting/SKILL.md",
+      "sha256": "2a03192a0bb44827246ad3136f534e9459fc994f42d5380c8fdbb949c9ab13a4"
+    },
+    {
+      "path": "plugins/context7/skills/context7-troubleshooting/references/errors.md",
+      "sha256": "ee1ab53e0a75815467ac69f1fa9ebda07435daeda3d04ffead54e6807a852c15"
+    },
+    {
+      "path": "plugins/context7/skills/context7-troubleshooting/references/quotas.md",
+      "sha256": "72f1452a6f1e2380f3bd9c8f82451b3de8f22f5964837775ad71ee70f7920cfc"
+    },
+    {
+      "path": "plugins/context7/skills/context7-troubleshooting/references/schema-mismatch.md",
+      "sha256": "85814abe859adc00b071a074e3d6266feada21eae7831687706cfe2e94bc4d78"
+    },
+    {
+      "path": "plugins/context7/tools/context7-mcp-tools.json",
+      "sha256": "2e99ee2961c9dce2593e888ae2cd43ef3407015945a2246d908050b0232a9743"
+    },
+    {
+      "path": "plugins/decodo/.codex-plugin/plugin.json",
+      "sha256": "c9045dac8f2d71d1c70e23e581ca825a3af3ffc8bb88d8c8fcacc44bc7acf456"
+    },
+    {
+      "path": "plugins/decodo/LICENSE",
+      "sha256": "a0dbf77bb516f4fbe097f0800de4131eeaba759536a512877238be91017de83b"
+    },
+    {
+      "path": "plugins/decodo/agents/README.md",
+      "sha256": "1d63228b0ec59c8c1376e6c21f85c019cfdf3ea271cf5a518a66726ddb5423a4"
+    },
+    {
+      "path": "plugins/decodo/agents/decodo-proxy-ops-agent.md",
+      "sha256": "907ba597e6103638932f7302fcaefc2f23c6c93fd956d610b0674d38d5651c9f"
+    },
+    {
+      "path": "plugins/decodo/agents/decodo-rank-tracking-agent.md",
+      "sha256": "4d41af91cfdb4cc9876838222bc8c32af4d05b5d9bcd40791b3019ef52d9425d"
+    },
+    {
+      "path": "plugins/decodo/agents/decodo-research-agent.md",
+      "sha256": "3f5e4f56179136eb49ed7d047060dca382b99ce27ccfc008cf58caa255bec18a"
+    },
+    {
+      "path": "plugins/decodo/agents/decodo-scraper-debug-agent.md",
+      "sha256": "bb8e8fe55f619f1dda6dea835157b3f57f4c14c48e1a56812f5cbc375780d1e3"
+    },
+    {
+      "path": "plugins/decodo/agents/decodo-social-listening-agent.md",
+      "sha256": "c20d471a61e4297e661ac740e0600ada44b2dc15c95f00f1638e6a230925cb30"
+    },
+    {
+      "path": "plugins/decodo/references/SECURITY_AND_COMPLIANCE.md",
+      "sha256": "e16aab4302c1520e629cc31e0d2f4889580b9e86d4aa025c80ddd0c59ce84f68"
+    },
+    {
+      "path": "plugins/decodo/references/api/decodo-api.md",
+      "sha256": "b7e590b195a701fdabe58d2779b62c94235030995c8b8a632ce00d838a7a866d"
+    },
+    {
+      "path": "plugins/decodo/references/api/mcp-server.md",
+      "sha256": "4ceb8b091aa8a0ae514de04787786ff3dd0f7dece685699a47fb382ba05eda8b"
+    },
+    {
+      "path": "plugins/decodo/references/api/sdk-ts.md",
+      "sha256": "b60ccfc677077615bbb515a05741aaa957d0f5e9c9e15614bb12061f95b73362"
+    },
+    {
+      "path": "plugins/decodo/references/api/serp-scraping-api.md",
+      "sha256": "af2fc5dd49360023d7be1c6ad04aa2558c9583e332813b895deef3b3d765092e"
+    },
+    {
+      "path": "plugins/decodo/references/api/site-unblocker.md",
+      "sha256": "74beff5274c66a58a1eed147d6628478834d819c3e0d8e596e5e977c830fb82c"
+    },
+    {
+      "path": "plugins/decodo/references/api/web-scraping-api.md",
+      "sha256": "6ae96bb5a7aabd286aa5340d445153c4fa45cb4fe63a51250e635fc5cf653311"
+    },
+    {
+      "path": "plugins/decodo/references/app-examples/china-extension.md",
+      "sha256": "aee60d150e89e9e9371c50cbdc5c63fc2d0187c5c9818c9adc8d8a8983d3398f"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/nightmare.md",
+      "sha256": "b27c127e71cbc5bf64f2832a5f36ba27389d7ce5750ed7d12c155fca9c8546fb"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/playwright.md",
+      "sha256": "f0ed340640e0aa72914a11b864ea9a1d466273c4fcafb16ae78e9dc9dc042e34"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/puppeteer.md",
+      "sha256": "466eaa15b46ba84d21f87ee9aa26851198ded6b2921d8b22f1779b8f5dc3470c"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/scrapy-middleware.md",
+      "sha256": "d6a780811709a648d1a757e0ccdf08f408bedabd6ac71046e338cb4e0dc62e7c"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/scrapy.md",
+      "sha256": "bb9b7a8d2da473bf6f4bde93b74a768b3cf316f7995669e0dc25997056de271c"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/selenium-delayed-js.md",
+      "sha256": "efd6a55406942057fa7eedca1f5855ffcd048c85990f5d8aaacae520dac26218"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/selenium-proxy-authentication.md",
+      "sha256": "5cecb4580705160ada23c4a041275f7d917f1086522c2571e97077ed379de16c"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/selenium.md",
+      "sha256": "4350510e4cd8417cf5620e06894f0fa475418315809dbd0682034773f504df72"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/yelp-selenium.md",
+      "sha256": "3e7be722371b644e08185af9c511407a1a8c163b1f4c581cc124cdcfc1d24105"
+    },
+    {
+      "path": "plugins/decodo/references/browser-examples/zalando-selenium.md",
+      "sha256": "a10372a473b68a39484e33eee5dccf3e28714d70a845b3fcff2437eafdaaa03a"
+    },
+    {
+      "path": "plugins/decodo/references/deferred/amazon-google-sheets.md",
+      "sha256": "fdbfeff9c38c65b7d6fbeabe6aba0c5e16056e334b7465239d882dc90fe48682"
+    },
+    {
+      "path": "plugins/decodo/references/deferred/amazon-scraper.md",
+      "sha256": "324c3cf9ed9a80ae2d6c711677d515f1a1a7ab97b70404b1b23561d971d447c0"
+    },
+    {
+      "path": "plugins/decodo/references/deferred/decodo-connector-plan.md",
+      "sha256": "85386f60e1fd4e9037cf2f6f02c0a00610d4b17b8d7531b982f0568a031ea27e"
+    },
+    {
+      "path": "plugins/decodo/references/deferred/python-scrapy-amazon.md",
+      "sha256": "69b6bdf8378ef61e0dde8fc25afaad09df971ee27080f67066df476b6daaca10"
+    },
+    {
+      "path": "plugins/decodo/references/excluded/github-org-metadata.md",
+      "sha256": "7081adc93ebbff5f50f79d7f1ebe4263c5a75a139409c424d26d72c144af17f1"
+    },
+    {
+      "path": "plugins/decodo/references/excluded/labubu-bot.md",
+      "sha256": "427344a08fdc03f7b9516f7965b9a859b6c65222215e03b272e522996330d2cf"
+    },
+    {
+      "path": "plugins/decodo/references/proxy-patterns/decodo-proxies.md",
+      "sha256": "dd9b62de071caafd9f66aaad84c6fbcc644953a6e5c93064178a20108bcb8275"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/beautifulsoup.md",
+      "sha256": "b00db09b89c98ef25667212d8860c295e6cf35020b4640836e59ece183190149"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/cheerio.md",
+      "sha256": "58cf8b96b7e7a3fcf7c55e93d947b5df23dcdef9f593f4015d1703b8f6098801"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/google-lens-scraper.md",
+      "sha256": "f62a11dc33d35a3650066b867973ae03e30bede1b1d79b055f35fdc7f290ac84"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/google-news-scraper.md",
+      "sha256": "e2e0eae83854fcffd2499298935ea5f200931e25330a4b81b0d457c9c17f3dda"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/python-scraper-tutorial.md",
+      "sha256": "07cd075cecf1ecefc11cacf417fe56f59adc98e41e2f3af10459e36da25d07e1"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/reddit-python-scraper.md",
+      "sha256": "25efc205959017b4519d81a35eb46577967d32977989f724253b146f45304507"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/soundcloud-scraper.md",
+      "sha256": "66d7dcd1e62567a94d193ec52bba42cf98843908c1b9f7ef7ab4680b3fa4c40d"
+    },
+    {
+      "path": "plugins/decodo/references/scraper-examples/zalando-python.md",
+      "sha256": "75cccaadec92bed4d769608bd0d86579a709845a48715c812e59d3c02babb76f"
+    },
+    {
+      "path": "plugins/decodo/references/workflows/langchain-ts.md",
+      "sha256": "9fbd0e3691f7a7d4b014fdb6c4d0974ea72b7333e477259af17e95e359bdca90"
+    },
+    {
+      "path": "plugins/decodo/references/workflows/n8n-decodo.md",
+      "sha256": "932611b326bdde780640b59a3c7ad2c11a783c8035dddfef3a79bfc1573e2fd4"
+    },
+    {
+      "path": "plugins/decodo/references/workflows/openclaw-skill.md",
+      "sha256": "de330f6b9203482dbe5ac5acbb7602cab53b016deb6068606b445214f07fe6ff"
+    },
+    {
+      "path": "plugins/decodo/references/workflows/rank-tracker.md",
+      "sha256": "bed563bbe9516a1779d1dc01aeb8033327f1870ea405e96fab2ac7036511dc4b"
+    },
+    {
+      "path": "plugins/decodo/references/workflows/reddit-intelligence.md",
+      "sha256": "d67095807ea06b927c27b962f33f8f5684871ff9126acf3be254c27af2999792"
+    },
+    {
+      "path": "plugins/decodo/scripts/doctor-decodo-auth.mjs",
+      "sha256": "ff2910746bbbad0c4b3e624adf697d1e7099ad1dc848d225e9c91205886a4c4b"
+    },
+    {
+      "path": "plugins/decodo/scripts/doctor-decodo-connection.mjs",
+      "sha256": "a2a95c5e14c34db53c7f02a558324a4e38cfe0a399f58b615c4fdd6c3dd4a8f0"
+    },
+    {
+      "path": "plugins/decodo/scripts/doctor-decodo-proxies.mjs",
+      "sha256": "3304acf4981d3df99f928e635e71183050081b2c7e435275a04070659e078056"
+    },
+    {
+      "path": "plugins/decodo/scripts/redaction-check.mjs",
+      "sha256": "5876b75bf9edd52a5817bbd79bd31f86f97b0799a7fd639ec67787b04a561f86"
+    },
+    {
+      "path": "plugins/decodo/scripts/reset-decodo-plugin-cache.mjs",
+      "sha256": "4e1f5a21612511d483def6cfdabb40a5bfb3b591673ce5678f91c78fa16bcf3d"
+    },
+    {
+      "path": "plugins/decodo/scripts/setup-decodo-mcp-token.mjs",
+      "sha256": "2511a6ed95628acaf16e32f6f232be9803d2798a0596d6e03b6b0b02f8327cbc"
+    },
+    {
+      "path": "plugins/decodo/scripts/setup-decodo-proxy-launchctl.mjs",
+      "sha256": "8a57b3cc325cf7354a65678328c0801ddfcdc2c73ea62d6a33d54b64156330ab"
+    },
+    {
+      "path": "plugins/decodo/scripts/smoke-decodo-mcp-after-setup.mjs",
+      "sha256": "b7df05b2e138db7e7019baeae3213dfd31b23ab22960eb01832050f2c053d3a7"
+    },
+    {
+      "path": "plugins/decodo/scripts/smoke-decodo-mcp.mjs",
+      "sha256": "1807f0b8fbd4fa94cd3d3f014c1a7258fb6d7ca9a0472a5bcf2a9d8177d5234e"
+    },
+    {
+      "path": "plugins/decodo/scripts/smoke-decodo-sdk.mjs",
+      "sha256": "9be0b6d7688b0f870f4150a7378050a555ebea9c4816a5257cb6ac479490dbbb"
+    },
+    {
+      "path": "plugins/decodo/scripts/smoke-proxy-rotation.mjs",
+      "sha256": "f89650a32005cac14e3bf40a030e2b0dee6039ac28ea12ce8ba778e10e9b263f"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-agent-workflows/SKILL.md",
+      "sha256": "b313cf9b1a9712ee2b58991084fc6357abe03fa1ca4f81ac0145be0e8cd71c00"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-browser-scrapy/SKILL.md",
+      "sha256": "0eefff11bb8e8d735d8080798c9856cc912010639783c6a87ca509a104b8652f"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-mcp-scraping/SKILL.md",
+      "sha256": "4b98c14d9def1b545e6de39f94b5e53076aab5fab4d8d5a12e8f979bb618788f"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-proxy-ops/SKILL.md",
+      "sha256": "85f6f76cb7395c0591ae4a0ce607d1f734d635ff1361690b6d9cfba896c71955"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-reddit-news-visual/SKILL.md",
+      "sha256": "a1d79e64b48b3906869b40ab3d788c8abbceef51d3f056b5849f990ecad18851"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-sdk-api/SKILL.md",
+      "sha256": "1ad568a9db41b81dd7033edd4c180de6f899fa378802cd46945ad40e3943ea47"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-serp-rank-tracking/SKILL.md",
+      "sha256": "6ab37d3bf6e388aac6b3eb056f338098a8a255793d1817e0325fc9e4717ff2a6"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-setup/SKILL.md",
+      "sha256": "5c385b113f5dd3f359e3f399be3bcccfb3436e13da3f7d4f751ab711495a0939"
+    },
+    {
+      "path": "plugins/decodo/skills/decodo-troubleshooting/SKILL.md",
+      "sha256": "db79a2c5c5fc2bfceb4263b92481ea87560eb0d213ed5a2cfbf310827dbd1061"
+    },
+    {
+      "path": "plugins/envato-r2/.codex-plugin/plugin.json",
+      "sha256": "cc083a9d88e6082a5e90891db17229a080b621dc3619d593bfe8ea86f0c81cb4"
+    },
+    {
+      "path": "plugins/envato-r2/.env.example",
+      "sha256": "4b7e49147c2f5dd84a627473791af1d632be4a55c5b27c4ef9c1b781b2fb08c2"
+    },
+    {
+      "path": "plugins/envato-r2/LICENSE",
+      "sha256": "a0dbf77bb516f4fbe097f0800de4131eeaba759536a512877238be91017de83b"
+    },
+    {
+      "path": "plugins/envato-r2/PRIVACY.md",
+      "sha256": "ca964a5df9beab815c6cf30982d9e1d77f0c23b7d0ea5a0320b5bbade71e75d7"
+    },
+    {
+      "path": "plugins/envato-r2/TERMS.md",
+      "sha256": "8c09c344503e9bb3cd57f274655a362b89c94656bb368526863d94a8709096ca"
+    },
+    {
+      "path": "plugins/envato-r2/assets/app-icon.svg",
+      "sha256": "e4eb5e441cbb5295df2d83ad43c5931ad619d8ee896c161fcb0804ca799a03e7"
+    },
+    {
+      "path": "plugins/envato-r2/package-lock.json",
+      "sha256": "c7e297db25ef6c6e6006b1f0a1eb0ca311614376121acac3fae8bdd8f800edf6"
+    },
+    {
+      "path": "plugins/envato-r2/package.json",
+      "sha256": "ac2bd2178010bb276bf960deb1071d5e26e3b3903b535792cfdfb6cc6104baed"
+    },
+    {
+      "path": "plugins/envato-r2/references/r2-s3-compatibility.md",
+      "sha256": "f287a064ca3d4ffdc01b008756f0c76d206f1eb15db06361d1aa5ee3370b256c"
+    },
+    {
+      "path": "plugins/envato-r2/scripts/start-mcp.sh",
+      "sha256": "8838a6fd7829ce499e7d81db8fadd30988417d1fdc0087f1c1b9176d035a344c"
+    },
+    {
+      "path": "plugins/envato-r2/skills/envato-r2/SKILL.md",
+      "sha256": "e01ccd8887e33b325b5fb9df454bd269c2e008a69a603b9294c8a946417b7dcc"
+    },
+    {
+      "path": "plugins/envato-r2/src/cli.mjs",
+      "sha256": "d582ac94f35f36ea5141f39c946c5fa30e108742ed1f3785c603a6ce1d1bd952"
+    },
+    {
+      "path": "plugins/envato-r2/src/envato-r2.mjs",
+      "sha256": "208a49b168dfbe3650d0b23b6dcd604de114b4a749e6b7f40aabafeec3e89e75"
+    },
+    {
+      "path": "plugins/envato-r2/src/server.mjs",
+      "sha256": "599010ec9c472b7adf4b4a78518f40e9074fdb40d846f09bf6bfc60c6e1c4c91"
+    },
+    {
+      "path": "plugins/envato-r2/tests/contract.test.mjs",
+      "sha256": "512339aceb214d8905ab9c19cbc3bdada8ae8af9230d7f4a9cd51733dca64a85"
+    },
+    {
+      "path": "plugins/envato-r2/tests/fixtures/storage-state.json",
+      "sha256": "3980547820e996321b3c575989e80a1b128b1529b56c8ebed6414d9fb1e4b52c"
+    },
+    {
+      "path": "plugins/modal/.codex-plugin/plugin.json",
+      "sha256": "f601dfabba9364944547544d2aeb95a9733aceca0d9e7807421bb4aad0cdd7a3"
+    },
+    {
+      "path": "plugins/modal/LICENSE",
+      "sha256": "a0dbf77bb516f4fbe097f0800de4131eeaba759536a512877238be91017de83b"
+    },
+    {
+      "path": "plugins/modal/assets/app-icon.svg",
+      "sha256": "3921144ff72d162aa1f895bbbd0732842bc271b8840690f9143c14ef36a8c2dd"
+    },
+    {
+      "path": "plugins/modal/skills/modal-browser-runtime/SKILL.md",
+      "sha256": "8a9c55ee9723850e86df93ed971934aa5c9b0b527954c416cbd2ae4ec9c2994d"
+    },
+    {
+      "path": "plugins/modal/skills/modal-browser-runtime/agents/openai.yaml",
+      "sha256": "54b2633dae58dd7091b0b5e76cd09cc1b0f7b2bebf0137b822eb61337ef7b29f"
+    },
+    {
+      "path": "plugins/modal/skills/modal-decodo/SKILL.md",
+      "sha256": "66be4e7690f84a0e0ace9e6ebf2d95cba1e117ae366de28b91a3ce39edf71920"
+    },
+    {
+      "path": "plugins/modal/skills/modal-decodo/agents/openai.yaml",
+      "sha256": "e1a38350b520b6fa75e4f6a32a7b2be167b7f1242bf4896ac0fc3383c0d1f897"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/SKILL.md",
+      "sha256": "9cb4d6a63e7818ca4f092ab1f9298fab68abf50b9fe2d373ef6535f65a46bba8"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/agents/openai.yaml",
+      "sha256": "f84af04907b02b7d83c10275090d4203e16c21e0d0e171a93b3182720fa2145d"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/examples/catalog.md",
+      "sha256": "632c25d815729bbcfc7b1b867085206d7fb337dd44cb413526d31bddc09826fd"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/examples/templates.md",
+      "sha256": "a9c61edad00610a820b4daaa0d55be35cfc5e3a7c1ae1b3af02be3693ad3fcc1"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-adjacent-tools.md",
+      "sha256": "f09354be37d4f9ee205e293bbe92675a8ac3e73b5b76e78ecb66ea8c144f5014"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-api-index.md",
+      "sha256": "8a875939587207e0e6a6daf35b3d4b853ce0a7497869aabf7f919fccd5e9219d"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-capability-matrix.md",
+      "sha256": "09f237a47b947f6dcc27dff848278d88b859fff6d0a3a9fb9174aee517c2e745"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-cli-index.md",
+      "sha256": "5f654ad59eaea113fd7e40be530ede1ccd329648dad3b03865dcd6c35092caeb"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-decodo-patterns.md",
+      "sha256": "86673c07091da971e23370ebc0f8177ecfc5941e0b51fc36c0f5f8aef3e1a39b"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-doc-refresh.md",
+      "sha256": "ca70bd8b6554f2c7d92690ecfd40b1fed93dc4a7335ddbc23a92ea3ef84c148e"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-guide-index.md",
+      "sha256": "eaecbc79e61d753a4ca5cd12152f6f63fbd657158937faebd8bcb151a40f0f69"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-networking-security.md",
+      "sha256": "b238405e4a4aa26ef0ea1e745c16029fa46d383bc2f32e97b260b9645cc0294e"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-operations-workflow.md",
+      "sha256": "be582d3f337e5611ae4a81e073a1a961d942ca37e2ebcc10b3809dc0ffa75476"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-p0-prompt-snippets.md",
+      "sha256": "3c7b3a225453dbd36e77510efd24aa04c54c2e3b63756f2c60e7238dbc367597"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-repo-index.md",
+      "sha256": "27199d5eaa308b11a5818d76fe49f059720e2e370ccb5ad5adb17857f9b91192"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-sdk-internals.md",
+      "sha256": "24eb86a0ad80fe0814791f4cee411782b82aeca1ed703c0972a21fa2ab41fac8"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/references/modal-workflow-patterns.md",
+      "sha256": "69997b4a03f8fee6cfb8f92f81a1e4f6728d9fc77c85257562cb88fe7351c2c5"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/scripts/check-modal-reference-coverage.mjs",
+      "sha256": "70b8b3b0580ac60bdca6eb0a4962c0ed8f11f071f91319d719c05a317fa48267"
+    },
+    {
+      "path": "plugins/modal/skills/modal-platform/scripts/refresh-modal-github-inventory.mjs",
+      "sha256": "31dd7f67018a3619668c44282e55f19a1d854bfa2efd636bdffd3c0447a9d349"
+    },
+    {
+      "path": "plugins/modal/skills/modal-release-operations/SKILL.md",
+      "sha256": "36b25ed385d9bfdb57333beb47526375fba14c22dd43fa9958dca9f15bde7380"
+    },
+    {
+      "path": "plugins/modal/skills/modal-release-operations/agents/openai.yaml",
+      "sha256": "833bededcd5a10dfdc1e661551594feba07632abea76d725a7d819fc9c60d5f1"
+    },
+    {
+      "path": "plugins/supabase-fullstack/.app.json",
+      "sha256": "3d159c265f4d2e8a7160c93179725305f66cecd6836a7c23667167236a440af6"
+    },
+    {
+      "path": "plugins/supabase-fullstack/.codex-plugin/plugin.json",
+      "sha256": "d9c3f057be52bd212160245ed47d0eed357b2c3a352add31689845439fe78d46"
+    },
+    {
+      "path": "plugins/supabase-fullstack/LICENSE",
+      "sha256": "a0dbf77bb516f4fbe097f0800de4131eeaba759536a512877238be91017de83b"
+    },
+    {
+      "path": "plugins/supabase-fullstack/assets/app-icon.svg",
+      "sha256": "7894ee4c3b3c13cd756d7c4f5e8a1e43951a340e562b6a80767c07c9cdb1d57e"
+    },
+    {
+      "path": "plugins/supabase-fullstack/docs/privacy-policy.md",
+      "sha256": "06d57b2cfa55ac93322c618729e03c94cef81c89947a024535d460876eb8fe2f"
+    },
+    {
+      "path": "plugins/supabase-fullstack/docs/terms-of-service.md",
+      "sha256": "4bc5ff3dba7101666cc59c9a61c8327262ad008011ce0b6fc23c737a5a13f712"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-command-surface/SKILL.md",
+      "sha256": "0b2d38792313789710d54325776c29f7b09fedae20a180e06c6c7e7c33649a5a"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-fullstack-review/SKILL.md",
+      "sha256": "d6d67fc8f9cb6307cf48b9022d612e111dbcf35b638b6f60e9cd3ec6fd5e2535"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/SKILL.md",
+      "sha256": "46be8127636a55d58d7627cd80b25f136fa381f0225694182ef2b7f934108191"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/_contributing.md",
+      "sha256": "1c2a02dbc5eebbda4ca0a17d9d9218bc750d4b311af0a17f9f7aba04ca046ad6"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/_sections.md",
+      "sha256": "c9e992612b422c7122de0b7542ebc2450db283edaab08cfe86c6d657fcccccd5"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/_template.md",
+      "sha256": "6299954250f212caabe339d752c3e5313a8e07d1a182a4e4b425baee91df1bd2"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/advanced-full-text-search.md",
+      "sha256": "40c2606bbb4c4dce31308f201b24cc7f58c7df05b1d9c6856fe2b888d3b7cf28"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/advanced-jsonb-indexing.md",
+      "sha256": "24cacf6a8bc35901dd566d24502ce8e57f810a5c196b897e61d52726e521d106"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/conn-idle-timeout.md",
+      "sha256": "630588902c00fcec59a5988cc5d042f76dcf2c923a535abfd8c47dca205eaed5"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/conn-limits.md",
+      "sha256": "11b2a67a7c7679cbbc5d807bbb17e69c98484a581d0c8b929c03408f412b81b2"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/conn-pooling.md",
+      "sha256": "88cf086bf98ba865d2e9d0579974e1366b14157619d6a93e7da77be91084e4a5"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/conn-prepared-statements.md",
+      "sha256": "174e9332fe3dda5c99b2b00159fb1915ae36c00bab3a7882c14e73e4344e946e"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/data-batch-inserts.md",
+      "sha256": "531933b82d6a622d0fae29e0ea80be6fe5d78655adf2804c271ea84a1930de37"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/data-n-plus-one.md",
+      "sha256": "21a44905e5b16a42741892ec34bb1bfef124d049b140a76934a9acd0f46f5fc2"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/data-pagination.md",
+      "sha256": "73c9fa10a3d439bedea0e11b640bd25bf30dd50f0d9006cf85baf7c3151543fa"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/data-upsert.md",
+      "sha256": "2612af83b20a2701dde30ef1f8d7efd26b7e9eef84717226b8f038a2d2150ff7"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/lock-advisory.md",
+      "sha256": "c88d259dbf81c3771438f59a165f7eab8acd09999dd370bdf807521c73f35aab"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/lock-deadlock-prevention.md",
+      "sha256": "09aee46f51d7178c8e55fe056cd5a94a64ba2c122fe418e6900cd99f297b2347"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/lock-short-transactions.md",
+      "sha256": "5aa7f61095916986d39644b446cdbcd2bacca7ef698a3bb50b3f82dd60207602"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/lock-skip-locked.md",
+      "sha256": "6c45077f430f29cd9cd8f448c94d578e827e7bd023fcdaf717a756acb116fa4b"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/monitor-explain-analyze.md",
+      "sha256": "4cb67ffbf8e57f2e5b380b0beb4242528b513723ce314a2c2ffcf083bd4203d7"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/monitor-pg-stat-statements.md",
+      "sha256": "89dca99d4e894fcbdcac136be7ad9fbc03d1342904f065c1b198dc9cf495f098"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/monitor-vacuum-analyze.md",
+      "sha256": "2892272011710eb49b3f185ec12f15ce9ce4c365792c672f6e2a9c90da426a1a"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/query-composite-indexes.md",
+      "sha256": "73e42424e671f0266e74fdb220db3196790f69fb43e2b19c7b9483eb4971b554"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/query-covering-indexes.md",
+      "sha256": "daf2a7f0477fb7357b62b5fb5b185b1995a77a186347e45cb780e25e7a7589b6"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/query-index-types.md",
+      "sha256": "472a74f22c2df203bd0154999b3a5a0187cca2ab3d9a3978e305bb7c32f1a282"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/query-missing-indexes.md",
+      "sha256": "91ad8b0ff4365704b4830a7f077c6f140f7140fd5d3ce5cd0b92b160cf9e25f1"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/query-partial-indexes.md",
+      "sha256": "6448982bc8558c6555284958edc331b29239c6a0130e6b4501dd6d4da607a6dd"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/schema-constraints.md",
+      "sha256": "90e8efda3e9e81095e642911ad4aae2809d160f29414338fa997253238f510f8"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/schema-data-types.md",
+      "sha256": "e01b58c14c7f3f65d8ead580b9a4fcf70b83baaab0f9a5f83c569c9fd113e8c8"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/schema-foreign-key-indexes.md",
+      "sha256": "7587713d12a65a212365459b3d39e4717d8a79e4073b10bd62f1054d8192c0dd"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/schema-lowercase-identifiers.md",
+      "sha256": "4bc80f70865f2390872591f326c8a6be6456a0aeb5a7e5a2475d7cd9d43059ab"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/schema-partitioning.md",
+      "sha256": "541e13fbeaf4bb1485c9059d4c9417dbdb766cf16f4237cd63a04ada7ec45b90"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/schema-primary-keys.md",
+      "sha256": "3c8beabef82066f9a0838b926da0885117fd2d9a263aaf84cb5ca9e5f0d400e9"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/security-privileges.md",
+      "sha256": "095909274a4fb43df785d7144cf674eeb40284d2d45628f14af4108737b93663"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/security-rls-basics.md",
+      "sha256": "e04dd1a3a382aafdaaa73fe9f7976352acdde6e90c2a2470d281b94d4f44b096"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-postgres-performance/references/security-rls-performance.md",
+      "sha256": "7c10f7b42e88403733f7e36b62c74e45f67dbd57fd019c664004e6bb51a32418"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-security-governance/SKILL.md",
+      "sha256": "32668aaecc025afe82ff5106c3704aa39d952b94c5d16b2e922f01c96aa82896"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-security-governance/references/auth-guide.md",
+      "sha256": "7da8dd8b8851cbb0ed4890557459a211216717a61dc2789276609795ebe4a5f1"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-security-governance/references/rls-guide.md",
+      "sha256": "8e7a46efbefe122de5544a758af7c3d78b0c2fc8e000498e461899930bf45dad"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-security-governance/references/storage-guide.md",
+      "sha256": "ddbee0d2b487e15d4db711d945fdf05a3b23c79be6157ef835f77b32646b40c1"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-security-governance/scripts/audit-rls.sql",
+      "sha256": "1fc95cfae182363d084f224e1cacaa1a41de5689a02368661060e1f5d6cf1c6e"
+    },
+    {
+      "path": "plugins/supabase-fullstack/skills/supabase-security-governance/scripts/security-check.sh",
+      "sha256": "94a64239213107b528233469a60e57883cf61d93fed7901393f8535040393f4d"
+    },
+    {
+      "path": "plugins/vintone-studio/.codex-plugin/plugin.json",
+      "sha256": "78b305e29a81320c314aad586f21c65595c929990bce9fd7bfcb0cf70728139a"
+    },
+    {
+      "path": "plugins/vintone-studio/LICENSE",
+      "sha256": "a0dbf77bb516f4fbe097f0800de4131eeaba759536a512877238be91017de83b"
+    },
+    {
+      "path": "plugins/vintone-studio/PRIVACY.md",
+      "sha256": "f4b1cbc5d571525bea1015eb3c2a79b6af14ea1acfab85075dacda9cf6cfab13"
+    },
+    {
+      "path": "plugins/vintone-studio/TERMS.md",
+      "sha256": "5f6c91412ab83737b7fa4f3a713a5432922dc69db72b4aec7dae0e0603cbd6c8"
+    },
+    {
+      "path": "plugins/vintone-studio/assets/app-icon.svg",
+      "sha256": "7e1d451d7fb70134c2557047c84fa4a5ff47a0b91e299d7ffe899e46ca4d27d1"
+    },
+    {
+      "path": "plugins/vintone-studio/knowledge/vintone-assets.json",
+      "sha256": "ead0e84a4058d03ad841ad5d60cd8a912140686ca2be039c0876a2d9d6383a54"
+    },
+    {
+      "path": "plugins/vintone-studio/knowledge/vintone-layer-contract.json",
+      "sha256": "d3d555aeac8e8b6d0e982bd2219492a0246f67e7701009b35ae9736e1937a84a"
+    },
+    {
+      "path": "plugins/vintone-studio/knowledge/vintone-output.json",
+      "sha256": "5fe4e6e577355db78506a5dd9911a48255160f0f2358b799fed406d22abb111d"
+    },
+    {
+      "path": "plugins/vintone-studio/knowledge/vintone-playlist.json",
+      "sha256": "ab3180c159e12402a2902e15fff415f5c5fc70ab6456c4dbf1f4a7c9b6095c68"
+    },
+    {
+      "path": "plugins/vintone-studio/knowledge/vintone-techniques.json",
+      "sha256": "4af06f226611b611aa1c055d02b694d21e31abf2b5a16753275b9338ce4249da"
+    },
+    {
+      "path": "plugins/vintone-studio/package.json",
+      "sha256": "240fe039b2348e520068799e473c36895e9375ddec22adc6066dbc5f3005d019"
+    },
+    {
+      "path": "plugins/vintone-studio/scripts/start-mcp.sh",
+      "sha256": "1238854b2fccb3a2e8ff05cdeb9fc96484dc77cb6e8421be698bee161f3e0ec2"
+    },
+    {
+      "path": "plugins/vintone-studio/skills/vintone-studio/SKILL.md",
+      "sha256": "d36c996526f55ae4e77052fa8c9b5cb1993f407c98626e4f1355bfc9376adac1"
+    },
+    {
+      "path": "plugins/vintone-studio/src/cli.mjs",
+      "sha256": "6e3caecf5e6cb03c46147628a655e6b7f2959a25a86db0f4d0831b951865f860"
+    },
+    {
+      "path": "plugins/vintone-studio/src/computer-runbook.mjs",
+      "sha256": "0fc98ac3245d1e2531aae4b25da9ee245cb8c6c5657ad945385c8302010e3678"
+    },
+    {
+      "path": "plugins/vintone-studio/src/config.mjs",
+      "sha256": "5cc251c94e815fe7808cb3c8edcf755d6072dc99f26e3d4881517aa46455a283"
+    },
+    {
+      "path": "plugins/vintone-studio/src/edit-packet.mjs",
+      "sha256": "4f15741adad4df9f36d783f2d02cc241b0b62a70faea9fa4754985e35d06005f"
+    },
+    {
+      "path": "plugins/vintone-studio/src/executors/computer-use.mjs",
+      "sha256": "f14093782690652d5c0bf85b7f46507ee24f31e8960e47e1a8577bdafca3c577"
+    },
+    {
+      "path": "plugins/vintone-studio/src/executors/manual.mjs",
+      "sha256": "08c4ab2ad7defc47480efc6f539339c7019076a8a79a8801afaf7630a3b8ea88"
+    },
+    {
+      "path": "plugins/vintone-studio/src/executors/uxp-handoff.mjs",
+      "sha256": "cfad78c9e19377301996c352c73929e461e737e805d20037673fab356ba4710f"
+    },
+    {
+      "path": "plugins/vintone-studio/src/knowledge.mjs",
+      "sha256": "e226839db474c81bda3294c810b14c056209ccfeec700e2075ceef4df7709342"
+    },
+    {
+      "path": "plugins/vintone-studio/src/safety-policy.mjs",
+      "sha256": "7f499f1cf1e8d68f200a929315eb7d383870c3ea8732f6e1930ff486dc36109d"
+    },
+    {
+      "path": "plugins/vintone-studio/src/server.mjs",
+      "sha256": "e3508905dce3a88c42c1a6f066f6ff7b0ada7eca7a19b1b5162b1142b2758c71"
+    },
+    {
+      "path": "plugins/vintone-studio/src/stdio-lifecycle.mjs",
+      "sha256": "5651a080a607edd295d7ca26ff6f03e6280e4c0e3e410cce66e1d179fd6d0a6c"
+    },
+    {
+      "path": "plugins/vintone-studio/tests/computer-runbook.test.mjs",
+      "sha256": "eceac802625b6e58ddfade424bcda4acf5823630f8de12da831c388309205ecd"
+    },
+    {
+      "path": "plugins/vintone-studio/tests/edit-packet.test.mjs",
+      "sha256": "90edbe8ba274cca5c34144af1ed20ec0c696a702d345bef63bd0bebf8b2de97c"
+    },
+    {
+      "path": "plugins/vintone-studio/tests/knowledge.test.mjs",
+      "sha256": "d503e0621dd7b99fecbe39c7f02bc9423ab2b88f87064a135a33cd2511848af1"
+    },
+    {
+      "path": "plugins/vintone-studio/tests/no-binary-copy.test.mjs",
+      "sha256": "c4bfcc2ef08d5600b6597f595e7028785de2ddd2e37e21a192a765bd4cce6c56"
+    },
+    {
+      "path": "plugins/vintone-studio/tests/plugin-contract.test.mjs",
+      "sha256": "4e83911d9c5177afaacd0b1ba6b5abc5cdea8921f827d50ebad4d4b750d1b843"
+    },
+    {
+      "path": "plugins/vintone-studio/tests/setup.test.mjs",
+      "sha256": "568b6ee842276edd8f6804660d739890681a29ff4276854cd8519896b1170a70"
+    },
+    {
+      "path": "plugins/vintone-studio/tests/uxp-companion.test.mjs",
+      "sha256": "2e499982fd13a8adf2ea2f38146275facecd2947a648be3d48fdc5d5b4b006b1"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/index.html",
+      "sha256": "16dc5191db4c50f3db4820fba2d9466e657643655e785ce9df211023e629eb5d"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/manifest.json",
+      "sha256": "a94e4d68a4972cce3394a9edc70607cf348032eac52ce644cd8a923b9199f226"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/src/binder/document-model.js",
+      "sha256": "326364e2f6fcfd53b874338c88d6d134bfd1efe1344afcf840245af62de78781"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/src/binder/layer-shape.js",
+      "sha256": "2d8a5d83e8b5c9e01249dddda4728886d06cf32d5e917050c3b3bee49bbed639"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/src/main.js",
+      "sha256": "98d000ef0acc1cb631d9f4cf7aa63e209ccf0dda604dad1e49feba8c1260daba"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/src/state.js",
+      "sha256": "1cab9eaab93af32e247f84db144b7a44af584e9608cd796c928e34e490d276eb"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/src/ui/bind-status.js",
+      "sha256": "b92f9a73de4893d4c52d86b9f11f13cca7840e3e85497da412c215c2b3885e2d"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/src/ui/components.js",
+      "sha256": "a6c58c8c05dccebb2c730148be3ec48ba1b17608c49fb823661c2dd079a93ca5"
+    },
+    {
+      "path": "plugins/vintone-studio/uxp-companion/styles.css",
+      "sha256": "69d6f24fa75f9823c003c2a18715162b374cbb5893d120931befb17c7140462f"
+    },
+    {
+      "path": "skills/chrome-devtools-accessibility/SKILL.md",
+      "sha256": "fbfd5d57d8d8b5af2a859e085337b6596a131679b12e5cf867ed9bf2f639e5e6"
+    },
+    {
+      "path": "skills/chrome-devtools-accessibility/agents/openai.yaml",
+      "sha256": "465ccf5533768961752df25dfafee9396c08483973b8df90c48a2a5de5ae6e3d"
+    },
+    {
+      "path": "skills/chrome-devtools-accessibility/references/a11y-snippets.md",
+      "sha256": "5150a4ba7a3003e16cb21321a4b0ebb985af5b7589f8bbb65d3ec7c5dc8d9830"
+    },
+    {
+      "path": "skills/chrome-devtools-evidence/SKILL.md",
+      "sha256": "71698d5360e333112b093eef25050d901975b097f6e5952968ce9cab987e3adc"
+    },
+    {
+      "path": "skills/chrome-devtools-extension-health/SKILL.md",
+      "sha256": "0792add90bfa0ecd0cab687d6fcf91f33456183c38676e3b2ea387311ea84a01"
+    },
+    {
+      "path": "skills/chrome-devtools-intake/SKILL.md",
+      "sha256": "e7ab6d0b2d39e182801e21b6405702a2c48ea5da5149336299be4ff4ffdc406e"
+    },
+    {
+      "path": "skills/chrome-devtools-memory/SKILL.md",
+      "sha256": "7becf93830b3eaed5afcd6d5c28ab3b2783a0ed4e386012fd55531df1090c537"
+    },
+    {
+      "path": "skills/chrome-devtools-memory/agents/openai.yaml",
+      "sha256": "59fbf3b4aa80093d31f4ff4cf9a5f6093547cf66ef1760ccf7a1825a12084a2b"
+    },
+    {
+      "path": "skills/chrome-devtools-memory/references/common-leaks.md",
+      "sha256": "4cd78e230e17229ac62529d3c86ae95fe92f9eaabce31a0e6951186ee820cdf2"
+    },
+    {
+      "path": "skills/chrome-devtools-memory/references/compare_snapshots.js",
+      "sha256": "ad92deb80899c2ea96745c3f69cf4c33f516c8cac3a7e97fe5f8b52fc2a0aaf9"
+    },
+    {
+      "path": "skills/chrome-devtools-memory/references/memlab.md",
+      "sha256": "317ede2f4f630b2ba8837240b238ce2b7957fad739bd0b74dc40465750f02171"
+    },
+    {
+      "path": "skills/chrome-devtools-memory/references/upstream-memory-tools.md",
+      "sha256": "f0caf1472f177bc98f91884d38b3c23d44b646fcbba4610649c8862e26c5eed3"
+    },
+    {
+      "path": "skills/chrome-devtools-network/SKILL.md",
+      "sha256": "91fe91e985281f5b7b22f1ab90ee419475b2c6ed353171911fffc974b183346f"
+    },
+    {
+      "path": "skills/chrome-devtools-performance/SKILL.md",
+      "sha256": "9f69f623a832c5471230cd72ef31350b8162f0617a9108e427eac7f8eb5f528f"
+    },
+    {
+      "path": "skills/chrome-devtools-performance/references/lcp-debugging.md",
+      "sha256": "3a6d602a05e5a47403c687b3d38fd263ca88d4b91cc517eb5703128621504ae4"
+    },
+    {
+      "path": "skills/chrome-devtools-performance/references/lcp-snippets.md",
+      "sha256": "b0255ded2dde094754897cb7d136d82c05a2c71d2d85bae71b92f3aa9f14331d"
+    },
+    {
+      "path": "skills/chrome-devtools-repair-loop/SKILL.md",
+      "sha256": "1f777699cdc3398ade618dc08415f42cf2ec7c773d76a71d5085ba40d077b2c8"
+    },
+    {
+      "path": "skills/chrome-devtools-repair-loop/references/upstream-troubleshooting.md",
+      "sha256": "a6d5c2af2b49c6b5ad116eebcebfe5ade4ae04f26554ed0b10c9f465453bc27e"
+    },
+    {
+      "path": "skills/chrome-devtools-runtime/SKILL.md",
+      "sha256": "1bfbfbdcc1c50885242cafb297c3a70830b2f04b3c58b58d52db5608070e3ad0"
+    },
+    {
+      "path": "skills/context7/SKILL.md",
+      "sha256": "889d259f896c5fdb244569a4bca4514b4fc3de063903a3025e1ee40c1f229004"
+    },
+    {
+      "path": "skills/context7/references/privacy.md",
+      "sha256": "85fc65aaed8e54cfe96e73edc77eb08085847be120cc0b03080aa9044de2ac9d"
+    },
+    {
+      "path": "skills/context7/references/routing.md",
+      "sha256": "314bd5edba8435602d805bd02c36dcd1290badd6e97a867d8f69faaba3a7e9eb"
+    },
+    {
+      "path": "skills/context7-app-integration/SKILL.md",
+      "sha256": "476bb45abb6d019d91155f78736dd822344561bd8435c76f6a8452ce0a43d240"
+    },
+    {
+      "path": "skills/context7-app-integration/references/sdk-and-ai-sdk.md",
+      "sha256": "de678075ce8dc0a674c8b04e9b67fc1a084765ead164714e42c428435107aa2a"
+    },
+    {
+      "path": "skills/context7-cli/SKILL.md",
+      "sha256": "faab8c1a68a8ed8d325e496df26e1fcdc1b474837635a72af08d76648f2d975d"
+    },
+    {
+      "path": "skills/context7-cli/references/auth.md",
+      "sha256": "6ca2fc19ce4c872e464ef1b7cf11f589981b077d710c50e9e1aec2a9696bf45e"
+    },
+    {
+      "path": "skills/context7-cli/references/docs-commands.md",
+      "sha256": "de81f93faec07e1af6c946a771615bb61a653aa271f829d3b67bab17023382ef"
+    },
+    {
+      "path": "skills/context7-cli/references/setup-commands.md",
+      "sha256": "0885a82a9d6fde514298448b0e328884fb0cc294b27b4c2b34f920119f7e90c3"
+    },
+    {
+      "path": "skills/context7-docs/SKILL.md",
+      "sha256": "4f88f16c1474156a4225735d7e3154ac8b84b332cc2b93507c343d419c2120d3"
+    },
+    {
+      "path": "skills/context7-docs/references/mcp-workflow.md",
+      "sha256": "694bea9280dca80cbc7efd51242aebf1f949225d8ca8c66c754809ffd5fb706d"
+    },
+    {
+      "path": "skills/context7-docs/references/output-style.md",
+      "sha256": "92ccdeb7f0744cf85d8f6a0b93075faa0c65a245477043a77da278cee0902d40"
+    },
+    {
+      "path": "skills/context7-mcp-setup/SKILL.md",
+      "sha256": "bf1d73ac1bf6f1cf0451d992645e2a8ee82e34727b1689b5e88533602d8c9271"
+    },
+    {
+      "path": "skills/context7-mcp-setup/references/codex-plugin-mcp.md",
+      "sha256": "d0ba9685fcc0ead74a34fe450644bc690ff9e9318e266f2a8ae711728a5b1a6f"
+    },
+    {
+      "path": "skills/context7-mcp-setup/references/hosted-http.md",
+      "sha256": "cbe1954973ab125adfe4cbc3b4cf502cde6007385ecb1d543eca379ca74fed9a"
+    },
+    {
+      "path": "skills/context7-mcp-setup/references/stdio-wrapper.md",
+      "sha256": "5fd4ff70e04990d3cf1e75973e325e1ad841698ef7fb5bb4f4655802dc889431"
+    },
+    {
+      "path": "skills/context7-skills-registry/SKILL.md",
+      "sha256": "812b39cc389aba77653a1170c1164d31b53f4a55be5349d16b9e207fb2ee5fd0"
+    },
+    {
+      "path": "skills/context7-skills-registry/references/search-install-remove.md",
+      "sha256": "3b66396b5da74a54c318d0427533b12b89ae8f20d81379be36ab4343b00b84b3"
+    },
+    {
+      "path": "skills/context7-skills-registry/references/trust-and-blocking.md",
+      "sha256": "d067826a188c57d7c93e8412baab11e4f269e1fd6a57452db2e19b8ebd957ce4"
+    },
+    {
+      "path": "skills/context7-troubleshooting/SKILL.md",
+      "sha256": "2a03192a0bb44827246ad3136f534e9459fc994f42d5380c8fdbb949c9ab13a4"
+    },
+    {
+      "path": "skills/context7-troubleshooting/references/errors.md",
+      "sha256": "ee1ab53e0a75815467ac69f1fa9ebda07435daeda3d04ffead54e6807a852c15"
+    },
+    {
+      "path": "skills/context7-troubleshooting/references/quotas.md",
+      "sha256": "72f1452a6f1e2380f3bd9c8f82451b3de8f22f5964837775ad71ee70f7920cfc"
+    },
+    {
+      "path": "skills/context7-troubleshooting/references/schema-mismatch.md",
+      "sha256": "85814abe859adc00b071a074e3d6266feada21eae7831687706cfe2e94bc4d78"
+    },
+    {
+      "path": "skills/decodo-agent-workflows/SKILL.md",
+      "sha256": "b313cf9b1a9712ee2b58991084fc6357abe03fa1ca4f81ac0145be0e8cd71c00"
+    },
+    {
+      "path": "skills/decodo-browser-scrapy/SKILL.md",
+      "sha256": "0eefff11bb8e8d735d8080798c9856cc912010639783c6a87ca509a104b8652f"
+    },
+    {
+      "path": "skills/decodo-mcp-scraping/SKILL.md",
+      "sha256": "4b98c14d9def1b545e6de39f94b5e53076aab5fab4d8d5a12e8f979bb618788f"
+    },
+    {
+      "path": "skills/decodo-proxy-ops/SKILL.md",
+      "sha256": "85f6f76cb7395c0591ae4a0ce607d1f734d635ff1361690b6d9cfba896c71955"
+    },
+    {
+      "path": "skills/decodo-reddit-news-visual/SKILL.md",
+      "sha256": "a1d79e64b48b3906869b40ab3d788c8abbceef51d3f056b5849f990ecad18851"
+    },
+    {
+      "path": "skills/decodo-sdk-api/SKILL.md",
+      "sha256": "1ad568a9db41b81dd7033edd4c180de6f899fa378802cd46945ad40e3943ea47"
+    },
+    {
+      "path": "skills/decodo-serp-rank-tracking/SKILL.md",
+      "sha256": "6ab37d3bf6e388aac6b3eb056f338098a8a255793d1817e0325fc9e4717ff2a6"
+    },
+    {
+      "path": "skills/decodo-setup/SKILL.md",
+      "sha256": "5c385b113f5dd3f359e3f399be3bcccfb3436e13da3f7d4f751ab711495a0939"
+    },
+    {
+      "path": "skills/decodo-troubleshooting/SKILL.md",
+      "sha256": "db79a2c5c5fc2bfceb4263b92481ea87560eb0d213ed5a2cfbf310827dbd1061"
+    },
+    {
+      "path": "skills/envato-r2/SKILL.md",
+      "sha256": "f4780fff12282432d7cdd9116a1226dd88606fbe209920603d8c3ec386db5429"
+    },
+    {
+      "path": "skills/envato-r2/references/r2-s3-compatibility.md",
+      "sha256": "f287a064ca3d4ffdc01b008756f0c76d206f1eb15db06361d1aa5ee3370b256c"
+    },
+    {
+      "path": "skills/modal-browser-runtime/SKILL.md",
+      "sha256": "8a9c55ee9723850e86df93ed971934aa5c9b0b527954c416cbd2ae4ec9c2994d"
+    },
+    {
+      "path": "skills/modal-browser-runtime/agents/openai.yaml",
+      "sha256": "54b2633dae58dd7091b0b5e76cd09cc1b0f7b2bebf0137b822eb61337ef7b29f"
+    },
+    {
+      "path": "skills/modal-decodo/SKILL.md",
+      "sha256": "66be4e7690f84a0e0ace9e6ebf2d95cba1e117ae366de28b91a3ce39edf71920"
+    },
+    {
+      "path": "skills/modal-decodo/agents/openai.yaml",
+      "sha256": "e1a38350b520b6fa75e4f6a32a7b2be167b7f1242bf4896ac0fc3383c0d1f897"
+    },
+    {
+      "path": "skills/modal-platform/SKILL.md",
+      "sha256": "9cb4d6a63e7818ca4f092ab1f9298fab68abf50b9fe2d373ef6535f65a46bba8"
+    },
+    {
+      "path": "skills/modal-platform/agents/openai.yaml",
+      "sha256": "f84af04907b02b7d83c10275090d4203e16c21e0d0e171a93b3182720fa2145d"
+    },
+    {
+      "path": "skills/modal-platform/examples/catalog.md",
+      "sha256": "632c25d815729bbcfc7b1b867085206d7fb337dd44cb413526d31bddc09826fd"
+    },
+    {
+      "path": "skills/modal-platform/examples/templates.md",
+      "sha256": "a9c61edad00610a820b4daaa0d55be35cfc5e3a7c1ae1b3af02be3693ad3fcc1"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-adjacent-tools.md",
+      "sha256": "f09354be37d4f9ee205e293bbe92675a8ac3e73b5b76e78ecb66ea8c144f5014"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-api-index.md",
+      "sha256": "8a875939587207e0e6a6daf35b3d4b853ce0a7497869aabf7f919fccd5e9219d"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-capability-matrix.md",
+      "sha256": "09f237a47b947f6dcc27dff848278d88b859fff6d0a3a9fb9174aee517c2e745"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-cli-index.md",
+      "sha256": "5f654ad59eaea113fd7e40be530ede1ccd329648dad3b03865dcd6c35092caeb"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-decodo-patterns.md",
+      "sha256": "86673c07091da971e23370ebc0f8177ecfc5941e0b51fc36c0f5f8aef3e1a39b"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-doc-refresh.md",
+      "sha256": "ca70bd8b6554f2c7d92690ecfd40b1fed93dc4a7335ddbc23a92ea3ef84c148e"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-guide-index.md",
+      "sha256": "eaecbc79e61d753a4ca5cd12152f6f63fbd657158937faebd8bcb151a40f0f69"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-networking-security.md",
+      "sha256": "b238405e4a4aa26ef0ea1e745c16029fa46d383bc2f32e97b260b9645cc0294e"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-operations-workflow.md",
+      "sha256": "be582d3f337e5611ae4a81e073a1a961d942ca37e2ebcc10b3809dc0ffa75476"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-p0-prompt-snippets.md",
+      "sha256": "3c7b3a225453dbd36e77510efd24aa04c54c2e3b63756f2c60e7238dbc367597"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-repo-index.md",
+      "sha256": "27199d5eaa308b11a5818d76fe49f059720e2e370ccb5ad5adb17857f9b91192"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-sdk-internals.md",
+      "sha256": "24eb86a0ad80fe0814791f4cee411782b82aeca1ed703c0972a21fa2ab41fac8"
+    },
+    {
+      "path": "skills/modal-platform/references/modal-workflow-patterns.md",
+      "sha256": "69997b4a03f8fee6cfb8f92f81a1e4f6728d9fc77c85257562cb88fe7351c2c5"
+    },
+    {
+      "path": "skills/modal-platform/scripts/check-modal-reference-coverage.mjs",
+      "sha256": "70b8b3b0580ac60bdca6eb0a4962c0ed8f11f071f91319d719c05a317fa48267"
+    },
+    {
+      "path": "skills/modal-platform/scripts/refresh-modal-github-inventory.mjs",
+      "sha256": "31dd7f67018a3619668c44282e55f19a1d854bfa2efd636bdffd3c0447a9d349"
+    },
+    {
+      "path": "skills/modal-release-operations/SKILL.md",
+      "sha256": "36b25ed385d9bfdb57333beb47526375fba14c22dd43fa9958dca9f15bde7380"
+    },
+    {
+      "path": "skills/modal-release-operations/agents/openai.yaml",
+      "sha256": "833bededcd5a10dfdc1e661551594feba07632abea76d725a7d819fc9c60d5f1"
+    },
+    {
+      "path": "skills/supabase-command-surface/SKILL.md",
+      "sha256": "0b2d38792313789710d54325776c29f7b09fedae20a180e06c6c7e7c33649a5a"
+    },
+    {
+      "path": "skills/supabase-fullstack-review/SKILL.md",
+      "sha256": "d6d67fc8f9cb6307cf48b9022d612e111dbcf35b638b6f60e9cd3ec6fd5e2535"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/SKILL.md",
+      "sha256": "46be8127636a55d58d7627cd80b25f136fa381f0225694182ef2b7f934108191"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/_contributing.md",
+      "sha256": "1c2a02dbc5eebbda4ca0a17d9d9218bc750d4b311af0a17f9f7aba04ca046ad6"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/_sections.md",
+      "sha256": "c9e992612b422c7122de0b7542ebc2450db283edaab08cfe86c6d657fcccccd5"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/_template.md",
+      "sha256": "6299954250f212caabe339d752c3e5313a8e07d1a182a4e4b425baee91df1bd2"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/advanced-full-text-search.md",
+      "sha256": "40c2606bbb4c4dce31308f201b24cc7f58c7df05b1d9c6856fe2b888d3b7cf28"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/advanced-jsonb-indexing.md",
+      "sha256": "24cacf6a8bc35901dd566d24502ce8e57f810a5c196b897e61d52726e521d106"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/conn-idle-timeout.md",
+      "sha256": "630588902c00fcec59a5988cc5d042f76dcf2c923a535abfd8c47dca205eaed5"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/conn-limits.md",
+      "sha256": "11b2a67a7c7679cbbc5d807bbb17e69c98484a581d0c8b929c03408f412b81b2"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/conn-pooling.md",
+      "sha256": "88cf086bf98ba865d2e9d0579974e1366b14157619d6a93e7da77be91084e4a5"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/conn-prepared-statements.md",
+      "sha256": "174e9332fe3dda5c99b2b00159fb1915ae36c00bab3a7882c14e73e4344e946e"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/data-batch-inserts.md",
+      "sha256": "531933b82d6a622d0fae29e0ea80be6fe5d78655adf2804c271ea84a1930de37"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/data-n-plus-one.md",
+      "sha256": "21a44905e5b16a42741892ec34bb1bfef124d049b140a76934a9acd0f46f5fc2"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/data-pagination.md",
+      "sha256": "73c9fa10a3d439bedea0e11b640bd25bf30dd50f0d9006cf85baf7c3151543fa"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/data-upsert.md",
+      "sha256": "2612af83b20a2701dde30ef1f8d7efd26b7e9eef84717226b8f038a2d2150ff7"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/lock-advisory.md",
+      "sha256": "c88d259dbf81c3771438f59a165f7eab8acd09999dd370bdf807521c73f35aab"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/lock-deadlock-prevention.md",
+      "sha256": "09aee46f51d7178c8e55fe056cd5a94a64ba2c122fe418e6900cd99f297b2347"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/lock-short-transactions.md",
+      "sha256": "5aa7f61095916986d39644b446cdbcd2bacca7ef698a3bb50b3f82dd60207602"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/lock-skip-locked.md",
+      "sha256": "6c45077f430f29cd9cd8f448c94d578e827e7bd023fcdaf717a756acb116fa4b"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/monitor-explain-analyze.md",
+      "sha256": "4cb67ffbf8e57f2e5b380b0beb4242528b513723ce314a2c2ffcf083bd4203d7"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/monitor-pg-stat-statements.md",
+      "sha256": "89dca99d4e894fcbdcac136be7ad9fbc03d1342904f065c1b198dc9cf495f098"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/monitor-vacuum-analyze.md",
+      "sha256": "2892272011710eb49b3f185ec12f15ce9ce4c365792c672f6e2a9c90da426a1a"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/query-composite-indexes.md",
+      "sha256": "73e42424e671f0266e74fdb220db3196790f69fb43e2b19c7b9483eb4971b554"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/query-covering-indexes.md",
+      "sha256": "daf2a7f0477fb7357b62b5fb5b185b1995a77a186347e45cb780e25e7a7589b6"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/query-index-types.md",
+      "sha256": "472a74f22c2df203bd0154999b3a5a0187cca2ab3d9a3978e305bb7c32f1a282"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/query-missing-indexes.md",
+      "sha256": "91ad8b0ff4365704b4830a7f077c6f140f7140fd5d3ce5cd0b92b160cf9e25f1"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/query-partial-indexes.md",
+      "sha256": "6448982bc8558c6555284958edc331b29239c6a0130e6b4501dd6d4da607a6dd"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/schema-constraints.md",
+      "sha256": "90e8efda3e9e81095e642911ad4aae2809d160f29414338fa997253238f510f8"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/schema-data-types.md",
+      "sha256": "e01b58c14c7f3f65d8ead580b9a4fcf70b83baaab0f9a5f83c569c9fd113e8c8"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/schema-foreign-key-indexes.md",
+      "sha256": "7587713d12a65a212365459b3d39e4717d8a79e4073b10bd62f1054d8192c0dd"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/schema-lowercase-identifiers.md",
+      "sha256": "4bc80f70865f2390872591f326c8a6be6456a0aeb5a7e5a2475d7cd9d43059ab"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/schema-partitioning.md",
+      "sha256": "541e13fbeaf4bb1485c9059d4c9417dbdb766cf16f4237cd63a04ada7ec45b90"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/schema-primary-keys.md",
+      "sha256": "3c8beabef82066f9a0838b926da0885117fd2d9a263aaf84cb5ca9e5f0d400e9"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/security-privileges.md",
+      "sha256": "095909274a4fb43df785d7144cf674eeb40284d2d45628f14af4108737b93663"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/security-rls-basics.md",
+      "sha256": "e04dd1a3a382aafdaaa73fe9f7976352acdde6e90c2a2470d281b94d4f44b096"
+    },
+    {
+      "path": "skills/supabase-postgres-performance/references/security-rls-performance.md",
+      "sha256": "7c10f7b42e88403733f7e36b62c74e45f67dbd57fd019c664004e6bb51a32418"
+    },
+    {
+      "path": "skills/supabase-security-governance/SKILL.md",
+      "sha256": "32668aaecc025afe82ff5106c3704aa39d952b94c5d16b2e922f01c96aa82896"
+    },
+    {
+      "path": "skills/supabase-security-governance/references/auth-guide.md",
+      "sha256": "7da8dd8b8851cbb0ed4890557459a211216717a61dc2789276609795ebe4a5f1"
+    },
+    {
+      "path": "skills/supabase-security-governance/references/rls-guide.md",
+      "sha256": "8e7a46efbefe122de5544a758af7c3d78b0c2fc8e000498e461899930bf45dad"
+    },
+    {
+      "path": "skills/supabase-security-governance/references/storage-guide.md",
+      "sha256": "ddbee0d2b487e15d4db711d945fdf05a3b23c79be6157ef835f77b32646b40c1"
+    },
+    {
+      "path": "skills/supabase-security-governance/scripts/audit-rls.sql",
+      "sha256": "1fc95cfae182363d084f224e1cacaa1a41de5689a02368661060e1f5d6cf1c6e"
+    },
+    {
+      "path": "skills/supabase-security-governance/scripts/security-check.sh",
+      "sha256": "94a64239213107b528233469a60e57883cf61d93fed7901393f8535040393f4d"
+    },
+    {
+      "path": "skills/vintone-studio/SKILL.md",
+      "sha256": "d36c996526f55ae4e77052fa8c9b5cb1993f407c98626e4f1355bfc9376adac1"
+    }
+  ]
+}

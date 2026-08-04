@@ -1,0 +1,101 @@
+{
+  "version": "vintone-techniques/v1",
+  "techniques": [
+    {
+      "id": "live-dithering",
+      "name": "Live dithering",
+      "mechanism": "COMPOSITE contents are processed by the locked processing chain.",
+      "pluginSurface": "Keep processing intact and use COMPOSITE as the clean drop target."
+    },
+    {
+      "id": "pattern-choice",
+      "name": "Pattern choice",
+      "mechanism": "Toggle layers inside the CHOOSE DITHER PATTERN smart object and save it.",
+      "pluginSurface": "Generate guarded steps for open, toggle, save, close, and visual proof."
+    },
+    {
+      "id": "pattern-tuning",
+      "name": "Pattern tuning",
+      "mechanism": "Adjust pattern scale, angle, opacity, or blend when the smart object exposes those controls.",
+      "pluginSurface": "Treat exact controls as runtime-discovered until the smart object is inspected."
+    },
+    {
+      "id": "background-toggle",
+      "name": "Background toggle",
+      "mechanism": "BLACK BG and WHITE BG control the design background.",
+      "pluginSurface": "When white background is active, prompt to disable multiply textures unless approved."
+    },
+    {
+      "id": "coloring",
+      "name": "Coloring",
+      "mechanism": "Paint PAINT IN MASK while the color-overlay style defines ink color.",
+      "pluginSurface": "Swatch list, recolor packet, and paint-arm instructions."
+    },
+    {
+      "id": "screen-count",
+      "name": "Screen count",
+      "mechanism": "Five default slots, with roughly six including white as the screen-print sweet spot.",
+      "pluginSurface": "Warn before expanding beyond the practical print count."
+    },
+    {
+      "id": "lighter-shade",
+      "name": "Lighter shade",
+      "mechanism": "Low-opacity mask painting creates thinner dither but keeps the same screen.",
+      "pluginSurface": "Represent as shade strength rather than a separate ink."
+    },
+    {
+      "id": "stacking",
+      "name": "Stacking",
+      "mechanism": "Color group order controls precedence.",
+      "pluginSurface": "Reorder color groups only within the colorway."
+    },
+    {
+      "id": "paint-with-light",
+      "name": "Paint with light",
+      "mechanism": "Use image copies and Levels to map highlights or shadows into a color group.",
+      "pluginSurface": "Create guarded packets for highlight or shadow color setup."
+    },
+    {
+      "id": "neutral-base",
+      "name": "Neutral base",
+      "mechanism": "Flood a mask with neutral gray while painting and recolor later.",
+      "pluginSurface": "Offer as a reversible color-slot prep step."
+    },
+    {
+      "id": "link-color-art",
+      "name": "Link color and art",
+      "mechanism": "Link color group and corresponding composite element so they move together.",
+      "pluginSurface": "Computer Use runbook can ask for link proof before moving."
+    },
+    {
+      "id": "auto-naming",
+      "name": "Naming",
+      "mechanism": "Manual naming is mandatory in the tutorial workflow.",
+      "pluginSurface": "Edit packets should include intended names for layers and outputs."
+    },
+    {
+      "id": "textures",
+      "name": "Textures",
+      "mechanism": "Worn Plastisol samples multiply over the artwork; imported textures use screen, invert, and threshold cleanup.",
+      "pluginSurface": "Toggle built-in textures and keep imported texture cleanup explicit."
+    },
+    {
+      "id": "separations",
+      "name": "Separation",
+      "mechanism": "Stamp visible on a copy, remove background, cut each ink color to a named layer, group, and save PSD/TIFF.",
+      "pluginSurface": "Output checklist and later guarded automation."
+    },
+    {
+      "id": "misregistration",
+      "name": "Misregistration",
+      "mechanism": "Tint black separation and add a small white inner shadow offset.",
+      "pluginSurface": "One-click vintage misprint packet with direction and strength."
+    },
+    {
+      "id": "mockup",
+      "name": "Mockup",
+      "mechanism": "Place flattened preview into a layered tee mockup design group and set garment color.",
+      "pluginSurface": "Export checklist with mockup destination and proof expectations."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "debug_bundle_create.schema.json",
+  "title": "debug_bundle_create input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "enum": ["fixture", "dry-run"],
+      "default": "dry-run"
+    },
+    "include": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["console", "network", "dom", "screenshot", "timeline", "fingerprints"]
+      },
+      "uniqueItems": true,
+      "default": ["console", "network", "timeline"]
+    },
+    "redact": {
+      "type": "boolean",
+      "default": true
+    },
+    "maxItems": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000,
+      "default": 200
+    }
+  },
+  "required": ["target"]
+}

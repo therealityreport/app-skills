@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "routeToken": {
+      "type": "string"
+    },
+    "source": {
+      "enum": ["fixture", "dry-run"]
+    },
+    "fixture": {
+      "type": "string"
+    },
+    "chromeVersion": {
+      "type": "number"
+    },
+    "flagsAvailable": {
+      "oneOf": [
+        { "type": "boolean" },
+        { "const": "unknown" }
+      ]
+    },
+    "execute": {
+      "type": "boolean",
+      "const": false
+    }
+  },
+  "required": ["source"]
+}

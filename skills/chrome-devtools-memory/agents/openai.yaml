@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chrome DevTools Memory"
+  short_description: "Debug browser memory leaks with gated Chrome DevTools evidence."
+  default_prompt: "Use @ChromeDevTools to investigate browser memory growth, heap snapshots, detached DOM nodes, and leak traces."

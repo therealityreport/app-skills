@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "McpToolManifest",
+  "type": "object",
+  "required": ["schemaVersion", "tools"],
+  "properties": {
+    "schemaVersion": { "type": "string" },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "inputSchemaRef", "capabilities", "safety"],
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "inputSchemaRef": { "type": "string" },
+          "capabilities": { "type": "array", "items": { "type": "string" } },
+          "safety": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

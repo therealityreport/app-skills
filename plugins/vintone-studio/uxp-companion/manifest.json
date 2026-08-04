@@ -1,0 +1,35 @@
+{
+  "manifestVersion": 5,
+  "id": "com.thomashulihan.vintone-studio.readonly",
+  "name": "VINTONE Studio Read-Only Binder",
+  "version": "0.1.0",
+  "main": "index.html",
+  "host": {
+    "app": "PS",
+    "minVersion": "23.3.0"
+  },
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "vintoneBinderPanel",
+      "label": {
+        "default": "VINTONE Binder"
+      },
+      "minimumSize": {
+        "width": 280,
+        "height": 220
+      },
+      "preferredDockedSize": {
+        "width": 320,
+        "height": 420
+      },
+      "preferredFloatingSize": {
+        "width": 360,
+        "height": 480
+      }
+    }
+  ],
+  "requiredPermissions": {
+    "localFileSystem": "request"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "api_call_to_curl.schema.json",
+  "title": "api_call_to_curl input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "run": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Debug-run fixture path or bundle id."
+    },
+    "apiCall": {
+      "type": "string",
+      "minLength": 1,
+      "description": "API call id within the run or bundle."
+    },
+    "shell": {
+      "type": "string",
+      "enum": ["posix"],
+      "default": "posix"
+    }
+  },
+  "required": ["run", "apiCall"]
+}

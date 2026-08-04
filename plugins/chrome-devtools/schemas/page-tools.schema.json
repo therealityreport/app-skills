@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PageToolDiscoveryResult",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "source", "listOnly", "availability", "execution", "tools"],
+  "properties": {
+    "schemaVersion": { "const": "page-tools.discovery.v1" },
+    "generatedAt": { "type": "string" },
+    "source": { "enum": ["webmcp", "third-party"] },
+    "page": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "url": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "listOnly": { "const": true },
+    "availability": { "$ref": "#/$defs/availability" },
+    "execution": { "$ref": "#/$defs/executionDisabled" },
+    "tools": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/pageTool" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "availability": {
+      "type": "object",
+      "required": ["discoveryStatus", "runtimeStatus", "requiredFlags", "flagsAvailable"],
+      "properties": {
+        "discoveryStatus": { "const": "listed-only" },
+        "runtimeStatus": { "enum": ["eligible", "ineligible", "unknown"] },
+        "chromeMinimumVersion": { "type": "number" },
+        "chromeVersion": { "type": "number" },
+        "requiredFlags": { "type": "array", "items": { "type": "string" } },
+        "flagsAvailable": {
+          "oneOf": [
+            { "type": "boolean" },
+            { "const": "unknown" }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "executionDisabled": {
+      "type": "object",
+      "required": [
+        "status",
+        "enabled",
+        "disabledByDefault",
+        "requiresExplicitExperimentalEnablement",
+        "experimentalEnablementStatus",
+        "reason"
+      ],
+      "properties": {
+        "status": { "const": "disabled" },
+        "enabled": { "const": false },
+        "disabledByDefault": { "const": true },
+        "requiresExplicitExperimentalEnablement": { "const": true },
+        "experimentalEnablementStatus": { "const": "not-implemented" },
+        "reason": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "pageTool": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "source",
+        "trust",
+        "status",
+        "listOnly",
+        "execution",
+        "redactionStatus",
+        "warnings"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "source": { "enum": ["webmcp", "third-party"] },
+        "provider": { "$ref": "#/$defs/provider" },
+        "trust": { "const": "untrusted" },
+        "status": { "const": "listed" },
+        "listOnly": { "const": true },
+        "execution": { "$ref": "#/$defs/executionDisabled" },
+        "inputSchemaSummary": { "$ref": "#/$defs/schemaSummary" },
+        "outputSchemaSummary": { "$ref": "#/$defs/schemaSummary" },
+        "redactionStatus": { "enum": ["not-needed", "redacted"] },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "provider": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "origin": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "schemaSummary": {
+      "type": "object",
+      "required": ["kind", "rawValuesIncluded", "redactedPaths"],
+      "properties": {
+        "kind": { "type": "string" },
+        "type": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ]
+        },
+        "format": { "type": "string" },
+        "required": { "type": "array", "items": { "type": "string" } },
+        "properties": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/schemaSummary" }
+        },
+        "items": { "$ref": "#/$defs/schemaSummary" },
+        "additionalProperties": {
+          "oneOf": [
+            { "type": "boolean" },
+            { "$ref": "#/$defs/schemaSummary" }
+          ]
+        },
+        "anyOf": { "type": "array", "items": { "$ref": "#/$defs/schemaSummary" } },
+        "oneOf": { "type": "array", "items": { "$ref": "#/$defs/schemaSummary" } },
+        "allOf": { "type": "array", "items": { "$ref": "#/$defs/schemaSummary" } },
+        "valueHints": {
+          "type": "object",
+          "additionalProperties": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "array", "items": { "type": "string" } }
+            ]
+          }
+        },
+        "rawValuesIncluded": { "const": false },
+        "redactedPaths": { "type": "array", "items": { "type": "string" } },
+        "truncated": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

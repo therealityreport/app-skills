@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "context7_doctor.schema.json",
+  "title": "context7_doctor input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "library": {
+      "type": "string",
+      "default": "chrome-devtools-protocol"
+    },
+    "includeSchemaDrift": {
+      "type": "boolean",
+      "default": true
+    },
+    "strict": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "version": "vintone-layer-contract/v1",
+  "source": "Seeded from the approved VINTONE plan evidence; runtime binding must confirm against the active document.",
+  "document": {
+    "canvas": {
+      "widthPx": 4800,
+      "heightPx": 6000,
+      "colorMode": "RGB",
+      "bitDepth": 8
+    },
+    "defaultColorSlots": 5,
+    "blankTemplateLayerCount": 62,
+    "sampleReferenceLayerCount": 137
+  },
+  "workflow": [
+    {
+      "id": "composite",
+      "name": "Composite",
+      "summary": "Drop source art into COMPOSITE so the processing chain live-dithers it to black and white."
+    },
+    {
+      "id": "dither",
+      "name": "Dither",
+      "summary": "Open CHOOSE DITHER PATTERN, toggle pattern layers, save, and close the smart object."
+    },
+    {
+      "id": "color",
+      "name": "Color",
+      "summary": "Paint each color group's PAINT IN MASK layer while color overlay defines the ink color."
+    }
+  ],
+  "signatureAnchors": [
+    {
+      "id": "vintone_root",
+      "path": ["VINTONE"],
+      "match": "root group name includes VINTONE, with trademark suffix tolerated",
+      "required": true
+    },
+    {
+      "id": "colors_group",
+      "path": ["VINTONE", "COLORS"],
+      "match": "group named COLORS under the VINTONE root",
+      "required": true
+    },
+    {
+      "id": "dither_smart_object",
+      "path": ["VINTONE", "CHOOSE DITHER PATTERN"],
+      "match": "smart object named CHOOSE DITHER PATTERN",
+      "required": true
+    },
+    {
+      "id": "artwork_composite",
+      "path": ["VINTONE", "ARTWORK COMPOSITE", "ARTWORK"],
+      "match": "ARTWORK COMPOSITE group containing ARTWORK",
+      "required": true
+    },
+    {
+      "id": "processing_group",
+      "path": ["VINTONE", "ARTWORK COMPOSITE", "ARTWORK", "PROCESSING"],
+      "match": "locked or red processing group",
+      "required": true,
+      "readOnly": true
+    },
+    {
+      "id": "textures_group",
+      "path": ["VINTONE", "ARTWORK COMPOSITE", "ARTWORK", "TEXTURES"],
+      "match": "texture group containing worn plastisol samples when present",
+      "required": false
+    },
+    {
+      "id": "composite_drop_target",
+      "path": ["VINTONE", "ARTWORK COMPOSITE", "ARTWORK", "COMPOSITE"],
+      "match": "user artwork drop target with BLACK BG and WHITE BG background controls",
+      "required": true
+    }
+  ],
+  "bindingRules": [
+    "Match by structure and layer shape, not exact color-slot names.",
+    "Treat PROCESSING and red/locked layers as read-only.",
+    "A color slot is a group under COLOR COMPOSITION with a BUFFER group, at least one PAINT IN MASK layer, and a color-overlay style.",
+    "Real sample files may rename color slots to semantic names and may include more than one PAINT IN MASK layer.",
+    "Dither pattern internals must be discovered by opening the smart object; do not hardcode internal layer names."
+  ],
+  "knownSampleNames": {
+    "colorways": ["COLOR COMPOSITION - 1 (FLEETWOOD)", "COLOR COMPOSITION - 2 (NIRVANA)"],
+    "semanticColorSlots": [
+      "SKINTONE",
+      "RED - HAIR / LIPS",
+      "BLUE - JEANS",
+      "YELLOW - OVERTONE",
+      "BROWN GREY"
+    ],
+    "compositeArtworkGroups": ["STEVIE", "LOGO", "LIVEINBOSTON", "BACKING", "ADJUSMENTS"]
+  }
+}

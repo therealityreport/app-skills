@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chrome_targets.schema.json",
+  "title": "chrome_targets input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "type": "string",
+      "description": "Friendly Chrome profile label."
+    },
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional title, origin, or path search text."
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 25,
+      "default": 10
+    },
+    "includeInactive": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

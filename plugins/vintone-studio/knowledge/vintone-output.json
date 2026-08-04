@@ -1,0 +1,55 @@
+{
+  "version": "vintone-output/v1",
+  "recipes": [
+    {
+      "id": "preview-export",
+      "name": "Preview export",
+      "writesFiles": true,
+      "copyFirstRequired": true,
+      "summary": "Export a flattened PNG or JPG preview from the working copy only.",
+      "proof": ["Preview file path", "Visible final composite before export"]
+    },
+    {
+      "id": "separations",
+      "name": "Color separations",
+      "writesFiles": true,
+      "copyFirstRequired": true,
+      "steps": [
+        "Stamp visible on a copied document.",
+        "Hide the VINTONE group and work on the stamped layer.",
+        "Remove the background with anti-alias off and contiguous off.",
+        "Cut each ink color to a named layer.",
+        "Do black first if misregistration will be applied.",
+        "Group separation layers and convert the group to a smart object.",
+        "Save layered PSD or TIFF output to an approved destination."
+      ],
+      "proof": ["Working copy path", "Layered output path", "Named separation layers"]
+    },
+    {
+      "id": "misregistration",
+      "name": "Vintage misregistration",
+      "writesFiles": false,
+      "copyFirstRequired": true,
+      "summary": "On the black separation, add a color-overlay tint and a small white inner shadow offset.",
+      "defaultParameters": {
+        "innerShadowSizePx": 0,
+        "innerShadowChokePercent": 100,
+        "innerShadowDistancePx": 3,
+        "angleDegrees": -30
+      }
+    },
+    {
+      "id": "mockup",
+      "name": "Garment mockup",
+      "writesFiles": true,
+      "copyFirstRequired": true,
+      "summary": "Place preview art into a layered tee mockup design group and export a review image.",
+      "proof": ["Mockup file path", "Garment color", "Placed design visibility"]
+    }
+  ],
+  "edgeCases": [
+    "Gradients and low-opacity dither should remain the same screen, not become extra ink colors.",
+    "Output paths must be approved before writing files.",
+    "Never save separation output over the licensed source template or sample file."
+  ]
+}

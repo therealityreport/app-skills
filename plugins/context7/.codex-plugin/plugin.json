@@ -1,0 +1,43 @@
+{
+  "name": "context7",
+  "version": "0.1.3",
+  "description": "Current library documentation lookup through a capability-preserving Context7 MCP proxy, CLI workflows, skills, and a focused docs researcher agent.",
+  "author": {
+    "name": "The Reality Report"
+  },
+  "homepage": "https://github.com/therealityreport/app-skills/tree/main/plugins/context7",
+  "repository": "https://github.com/therealityreport/app-skills",
+  "license": "MIT",
+  "keywords": [
+    "context7",
+    "mcp",
+    "documentation",
+    "library-docs",
+    "skills",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Context7",
+    "shortDescription": "Current docs lookup for libraries, SDKs, APIs, and developer tools.",
+    "longDescription": "Local Codex plugin for Context7. Provides a capability-preserving stdio MCP proxy, CLI fallback workflows, focused skills for docs lookup and legacy registry migration, troubleshooting guidance, and a docs researcher agent for isolated documentation research.",
+    "developerName": "The Reality Report",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://github.com/therealityreport/app-skills/tree/main/plugins/context7",
+    "privacyPolicyURL": "https://github.com/therealityreport/app-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/therealityreport/app-skills/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Use Context7 for current docs.",
+      "Look up this library with Context7.",
+      "Check my Context7 setup."
+    ],
+    "brandColor": "#059669",
+    "composerIcon": "./assets/app-icon.svg",
+    "logo": "./assets/app-icon.svg"
+  }
+}
