@@ -13,10 +13,10 @@ const families = [
   { name: "modal", displayName: "Modal", category: "Coding", skills: ["modal-platform", "modal-decodo", "modal-browser-runtime", "modal-release-operations"], roots: ["skills", "assets"] },
   { name: "supabase-fullstack", displayName: "Supabase Fullstack", category: "Productivity", skills: ["supabase-command-surface", "supabase-fullstack-review", "supabase-postgres-performance", "supabase-security-governance"], roots: ["skills", "assets", "docs", ".app.json"] },
   { name: "context7", displayName: "Context7", category: "Coding", skills: ["context7", "context7-app-integration", "context7-cli", "context7-docs", "context7-mcp-setup", "context7-skills-registry", "context7-troubleshooting"], roots: ["skills", "assets", "agents", "scripts", "tools", ".mcp.json", "PRIVACY.md", "TERMS.md"] },
-  { name: "chrome-devtools", displayName: "Chrome DevTools", category: "Coding", skills: ["chrome-devtools-accessibility", "chrome-devtools-evidence", "chrome-devtools-extension-health", "chrome-devtools-intake", "chrome-devtools-memory", "chrome-devtools-network", "chrome-devtools-performance", "chrome-devtools-repair-loop", "chrome-devtools-runtime"], roots: ["skills", "agents", "docs", "schemas", "src", "tools", "bin", "scripts", "package.json", "package-lock.json", "tsconfig.json"] },
+  { name: "chrome-devtools", displayName: "Chrome DevTools", category: "Coding", skills: ["chrome-devtools-accessibility", "chrome-devtools-evidence", "chrome-devtools-extension-health", "chrome-devtools-intake", "chrome-devtools-memory", "chrome-devtools-network", "chrome-devtools-performance", "chrome-devtools-repair-loop", "chrome-devtools-runtime"], roots: ["skills", "agents", "docs", "schemas", "src", "test", "tools", "bin", "scripts", "package.json", "package-lock.json", "tsconfig.json"] },
   { name: "decodo", displayName: "Decodo", category: "Productivity", skills: ["decodo-agent-workflows", "decodo-browser-scrapy", "decodo-mcp-scraping", "decodo-proxy-ops", "decodo-reddit-news-visual", "decodo-sdk-api", "decodo-serp-rank-tracking", "decodo-setup", "decodo-troubleshooting"], roots: ["skills", "agents", "references", "scripts"] },
-  { name: "envato-r2", displayName: "Envato to R2", category: "Coding", skills: ["envato-r2"], roots: ["skills", "assets", "references", "src", "scripts", "tests", "package.json", "package-lock.json", ".env.example", "PRIVACY.md", "TERMS.md"] },
-  { name: "vintone-studio", displayName: "VINTONE Studio", category: "Productivity", skills: ["vintone-studio"], roots: ["skills", "assets", "knowledge", "src", "scripts", "tests", "uxp-companion", "package.json", "PRIVACY.md", "TERMS.md"] }
+  { name: "envato-r2", displayName: "Envato to R2", category: "Coding", skills: ["envato-r2"], roots: ["skills", "assets", "references", "src", "scripts", "tests", "package.json", "package-lock.json", ".env.example", "PRIVACY.md", "TERMS.md", "README.md"] },
+  { name: "vintone-studio", displayName: "VINTONE Studio", category: "Productivity", skills: ["vintone-studio"], roots: ["skills", "assets", "knowledge", "src", "scripts", "tests", "uxp-companion", "package.json", "PRIVACY.md", "TERMS.md", "README.md"] }
 ];
 
 const excludedNames = new Set(["node_modules", "dist", "build", "coverage", ".git", ".DS_Store", ".plan-work"]);
@@ -68,7 +68,8 @@ function sanitizeTextFile(file, family) {
     .replaceAll("friendly profile name such as `Codex`, `TRR`, `THB`, or `openai-agent`", "a friendly, non-account profile name")
     .replaceAll("friendly profile names such as `Codex`, `TRR`, `THB`, or `openai-agent`", "friendly, non-account profile names")
     .replaceAll("friendly profile name such as THB, Codex, or TRR", "friendly, non-account Chrome profile name")
-    .replaceAll('if (lower === "trr") return "TRR";', 'return value.trim();')
+    .replaceAll('  if (lower === "trr") return "TRR";\n', "")
+    .replaceAll('  if (lower === "thb") return "THB";\n', "")
     .replaceAll('profileLabel: "TRR"', 'profileLabel: "Codex"');
   text = text.replace(/^user-invocable:\s*.*\n/gm, "");
 
@@ -77,6 +78,9 @@ function sanitizeTextFile(file, family) {
   }
   if (family === "context7") {
     text = text.replace(/User\/global config and TRR docs-researcher config must point to `~\/\.codex\/plugins\/context7\/scripts\/start-context7-mcp\.sh`/g, "Codex plugin configuration should point to the packaged `scripts/start-context7-mcp.sh`");
+  }
+  if (family === "chrome-devtools") {
+    text = text.replace(/\b(?:TRR|THB)\b/g, "Codex");
   }
   if (family === "modal") {
     text = removeHeadingSections(text, /TRR|THB-BBL|private adapter/i);
@@ -114,7 +118,7 @@ function createManifest(family, sourceManifest) {
   delete manifest.agents;
   delete manifest.hooks;
   delete manifest.upstream;
-  if (family.name === "modal" || family.name === "decodo" || family.name === "envato-r2" || family.name === "vintone-studio") delete manifest.mcpServers;
+  if (family.name === "modal" || family.name === "decodo") delete manifest.mcpServers;
   manifest.interface ||= {};
   manifest.interface.displayName = family.displayName;
   manifest.interface.developerName = "The Reality Report";
@@ -168,6 +172,11 @@ for (const family of families) {
   for (const entry of family.roots) {
     const source = path.join(sourceDir, entry);
     if (fs.existsSync(source)) copyEntry(source, path.join(destination, entry), family.name);
+  }
+  if (family.name === "envato-r2" || family.name === "vintone-studio") {
+    const disabledMcp = path.join(sourceDir, ".mcp.json.disabled-20260804");
+    if (!fs.existsSync(disabledMcp)) throw new Error(`missing portable MCP definition: ${disabledMcp}`);
+    writeJson(path.join(destination, ".mcp.json"), JSON.parse(fs.readFileSync(disabledMcp, "utf8")));
   }
   for (const name of fs.readdirSync(path.join(destination, "skills"))) {
     if (!family.skills.includes(name)) fs.rmSync(path.join(destination, "skills", name), { recursive: true, force: true });

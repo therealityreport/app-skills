@@ -26,5 +26,5 @@ node bin/cdt doctor
 - Do not install or update Chrome extensions.
 - Do not inspect live profile extension state.
 - Do not present adapter mocks as live browser connectivity.
-- Use friendly profile names in visible output, such as `Codex`, `TRR`, `THB`, or `openai-agent`.
+- Use friendly profile names in visible output, such as `Codex`, `Codex`, `Codex`, or `openai-agent`.
 - Require explicit route tokens for profile-connected modes.

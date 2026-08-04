@@ -1,0 +1,10 @@
+{
+  "id": "failing",
+  "createdAt": "2026-06-05T12:00:00.000Z",
+  "mode": "local",
+  "target": { "source": "manual", "scopeStatus": "selected", "url": "http://localhost:3000/dashboard" },
+  "symptom": "API failure",
+  "evidence": [],
+  "hypotheses": [],
+  "actions": []
+}

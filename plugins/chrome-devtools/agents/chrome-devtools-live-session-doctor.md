@@ -11,7 +11,7 @@ Diagnose why a live `@ChromeDevTools` route cannot safely run through the offici
 - Keep isolated upstream sessions as the default.
 - Require explicit route-token ownership for `autoConnect`, `browserUrl`, and `wsEndpoint`.
 - Require or fail with a strong warning for URL allow/block policy on profile-connected routes.
-- Use friendly Chrome profile names in visible output, such as `Codex`, `TRR`, `THB`, or `openai-agent`.
+- Use friendly Chrome profile names in visible output, such as `Codex`, `Codex`, `Codex`, or `openai-agent`.
 - Keep `--redactNetworkHeaders`, `--no-usage-statistics`, and `--no-performance-crux` in the upstream command unless the user explicitly asks for a reviewed opt-in mode.
 - Do not open raw CDP sockets or mutate browser profiles.
 

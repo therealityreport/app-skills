@@ -23,7 +23,7 @@
     },
     {
       "path": "plugins/chrome-devtools/agents/chrome-devtools-live-session-doctor.md",
-      "sha256": "a46fc87f155730e6ff192289f3677c8ce6b6d0633e3b0bc1ec3cf77c17ebc484"
+      "sha256": "1ddec7f2a57c0eca362dc277c840d0a5abcaea55a1454c22f474649d22b063cb"
     },
     {
       "path": "plugins/chrome-devtools/agents/chrome-devtools-network-analyst.md",
@@ -83,11 +83,11 @@
     },
     {
       "path": "plugins/chrome-devtools/docs/safety-and-redaction.md",
-      "sha256": "375e39a6f27568e0bcb426c5a6115d7efd1eca9a71bbc51bf42c75b7712f7ddf"
+      "sha256": "3dba2da4fac4bcea7b1fd685de09513b6934f42b08ce0c564bad16372d984ebc"
     },
     {
       "path": "plugins/chrome-devtools/docs/target-preview.md",
-      "sha256": "bdf9020a23cf294133825380d665b76a9c0c0d35b57b8b2d73df859df6bbdd8b"
+      "sha256": "ab8876fddaf14f1ed5427453c9d006c9ad11cd7d009dd0c201cad224db6b7ac1"
     },
     {
       "path": "plugins/chrome-devtools/package-lock.json",
@@ -127,7 +127,7 @@
     },
     {
       "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/chrome_health.schema.json",
-      "sha256": "e6f9b5487f168e01de22aa69496750beaac94643e03df090ce85ff08d3cc1015"
+      "sha256": "d75f919085ac229a2e3fb9fba4034786c7d8f8c201dc83cab9ee39fcb162f2dd"
     },
     {
       "path": "plugins/chrome-devtools/schemas/mcp-tool-inputs/chrome_targets.schema.json",
@@ -203,7 +203,7 @@
     },
     {
       "path": "plugins/chrome-devtools/skills/chrome-devtools-extension-health/SKILL.md",
-      "sha256": "0792add90bfa0ecd0cab687d6fcf91f33456183c38676e3b2ea387311ea84a01"
+      "sha256": "14764ea257ac41edbc6b9f6020e49501f65501bf2a072d71052f2f9a5dbbe781"
     },
     {
       "path": "plugins/chrome-devtools/skills/chrome-devtools-intake/SKILL.md",
@@ -319,7 +319,7 @@
     },
     {
       "path": "plugins/chrome-devtools/src/core/live-routing.ts",
-      "sha256": "93f49cb1f380888ce7e7359e470365622058b9e7be21f865f8a1c97d65eec795"
+      "sha256": "078b4ad987e155ca7861143613edcbfc20c6d4fcb51a8d07acfc2c1ac53685a3"
     },
     {
       "path": "plugins/chrome-devtools/src/core/redaction-policy.ts",
@@ -384,6 +384,126 @@
     {
       "path": "plugins/chrome-devtools/src/upstream/delegate.ts",
       "sha256": "8a401f1277b9bafd5d1f2bd3d76274a066a43523751037c69f2f82dbff474997"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/core/diff.test.ts",
+      "sha256": "fd86d2f6152d415e735e69822ded0b2836f67344180440af371b95b34e659cea"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/core/live-collect.test.ts",
+      "sha256": "141855b371a63687b8d278cbc9cc85d8cc56e3da268ecedc1eb049b382ab7d04"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/core/live-routing.test.ts",
+      "sha256": "60cbfdf3a8234a92b220c83434bb69cea66041f55d43d8c707494aecc8f676d4"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/core/redaction.test.ts",
+      "sha256": "0b60f28b6c8afa61fc200fcfe975ecdc0727a374baff5d2ba545406ba6035054"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/core/target-registry.test.ts",
+      "sha256": "2f355262291e6891d89f3167d0b73cfacda76e4114aa840b8a0ba3bec2aef5b3"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/core/weekly-regression.test.ts",
+      "sha256": "bf00ecab0a64bb45aeae592b2b794f99ea0a0a8e70b3ae4f121d02195d33b60c"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/experimental/page-tools.test.ts",
+      "sha256": "41cd472aee224935cd012fdf28cae7d0c72e1c77c4b2424aa4b2d02d503109a0"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/basic/api-calls.ndjson",
+      "sha256": "f5d6138d18393ab001fdc5e3662026070d3c3ce6a233ad443dd32b33d9d33ac7"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/basic/console.ndjson",
+      "sha256": "b773fed974425d5ff7c3d1275c47394a179acf4db9ac6c2c77a6ec902f6071a5"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/basic/run.json",
+      "sha256": "4596e7618425e16388506e381a48157bddfe34d1c066c3d4769ba258825532d4"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/failing/api-calls.ndjson",
+      "sha256": "19413143aa91f62bddc6e22cb06df3932b0b45514cf8cfde821d6663a81a75be"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/failing/console.ndjson",
+      "sha256": "1173b9bd8396687f376bc986a978b8a3df2b902535cedd16545a71cadafdda9a"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/failing/run.json",
+      "sha256": "a0cea852aab30eb7ec1d94935754cb173174daf154c712cca46d4db2db032fe6"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/fixed/api-calls.ndjson",
+      "sha256": "f30bb0adfc880cab2b5257203f3e49f2aa6db191f15a800b37a845e9c452ffd9"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/fixed/console.ndjson",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/debug-run/fixed/run.json",
+      "sha256": "41601d2b6b22b5849e56187f722ffbf54509ea4c01c0a0d15774793d5bdb56b8"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/experimental/third-party-tools.json",
+      "sha256": "805a7dfbce944bdf70d588c3eaf59f2cde44eb1a5376b692381c15b760907511"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/experimental/webmcp-tools.json",
+      "sha256": "c8b76465eb9da227c022eb681e7668fbb73033b1a69d1c711d5a1896dd7c477a"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/network/api-workbench.har.json",
+      "sha256": "c56161168554cf3e99d2daf9a8dd468e39b32a26609b2c62d0bafd575a57bc4a"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/network/events.sse",
+      "sha256": "66dea269665157c10698fe30eb1ad8963cca29b7110d4009446d3bd6a4c5e9c7"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/fixtures/redaction/sensitive/input.txt",
+      "sha256": "9fd9cd4fe6ee97c9a4896cdb21062bef0be0922ccee2ea3395d4d76cb018b3fe"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/mcp/mcp-tool-coverage.json",
+      "sha256": "31f6fbbb9254eb8a45bd0a1434ae7195813b13743a6458e866469b6300f602c9"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/mcp/tools-list.expected.json",
+      "sha256": "21983948836b2167a41d9a25d365e83a3d7e5b7752acb9ffcc948ea24fd7e25d"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/mcp/tools.test.ts",
+      "sha256": "10b466c156bf110c80ddc484af9362b9f133b41fac4c9ca7875a35b1202ceed6"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/mcp/valid-tool-inputs.json",
+      "sha256": "1955648e7bf806ef7faf3d805403dc8bef1244739cb6514b253e926342574d24"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/network/api-workbench.test.ts",
+      "sha256": "d91ae6e7f550fc7a767e579416af5586fdb29dee30677097941177cf9befd71d"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/network/har-sse.test.ts",
+      "sha256": "325e4816b7011abf8acdd0ea52c2ff4689fedfbde32ed4757f5985000a1ed30b"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/scripts/sync-install.test.ts",
+      "sha256": "afdcbce5ec725d56620b7d198e570e3ca140d81312bb366975eb48afae81fd4c"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/upstream/chrome-devtools-mcp.test.ts",
+      "sha256": "1427f5df75d08f2854d94f1608a7353f351c445a68b057b5c5944aa68737cc59"
+    },
+    {
+      "path": "plugins/chrome-devtools/test/upstream/delegate.test.ts",
+      "sha256": "2af28ab4c924fd58f8a05767accf906aa8b39559a44806d1a50c1f766a3299bd"
     },
     {
       "path": "plugins/chrome-devtools/tools/mcp-tool-manifest.json",
@@ -839,11 +959,15 @@
     },
     {
       "path": "plugins/envato-r2/.codex-plugin/plugin.json",
-      "sha256": "cc083a9d88e6082a5e90891db17229a080b621dc3619d593bfe8ea86f0c81cb4"
+      "sha256": "8941706eada823db8279361187ba5fd4b386277a592d82cd5d324f048db3fe0b"
     },
     {
       "path": "plugins/envato-r2/.env.example",
       "sha256": "4b7e49147c2f5dd84a627473791af1d632be4a55c5b27c4ef9c1b781b2fb08c2"
+    },
+    {
+      "path": "plugins/envato-r2/.mcp.json",
+      "sha256": "8552717ef1b8356776b158cfa476581a72b87735881db28c40f3ed8f3c9cf945"
     },
     {
       "path": "plugins/envato-r2/LICENSE",
@@ -852,6 +976,10 @@
     {
       "path": "plugins/envato-r2/PRIVACY.md",
       "sha256": "ca964a5df9beab815c6cf30982d9e1d77f0c23b7d0ea5a0320b5bbade71e75d7"
+    },
+    {
+      "path": "plugins/envato-r2/README.md",
+      "sha256": "7577de9dde14d8dfcf8866d0b01082c39018b11bf52fdc4745f4733a8454587f"
     },
     {
       "path": "plugins/envato-r2/TERMS.md",
@@ -1211,7 +1339,11 @@
     },
     {
       "path": "plugins/vintone-studio/.codex-plugin/plugin.json",
-      "sha256": "78b305e29a81320c314aad586f21c65595c929990bce9fd7bfcb0cf70728139a"
+      "sha256": "8c379eb4f8382cff59a158c5c29f37d6b1453d34a01bacf0a4cf48f05af1d5d0"
+    },
+    {
+      "path": "plugins/vintone-studio/.mcp.json",
+      "sha256": "9f4f8c23c8a6fe73356e1251cb6ff416304e6af62ac1ef17e493545aa3de16a1"
     },
     {
       "path": "plugins/vintone-studio/LICENSE",
@@ -1220,6 +1352,10 @@
     {
       "path": "plugins/vintone-studio/PRIVACY.md",
       "sha256": "f4b1cbc5d571525bea1015eb3c2a79b6af14ea1acfab85075dacda9cf6cfab13"
+    },
+    {
+      "path": "plugins/vintone-studio/README.md",
+      "sha256": "a08d3f9efbd0a62e46774500474ce95cd47e4531a97ad7c1c9c29a74e137ed1e"
     },
     {
       "path": "plugins/vintone-studio/TERMS.md",
@@ -1387,7 +1523,7 @@
     },
     {
       "path": "skills/chrome-devtools-extension-health/SKILL.md",
-      "sha256": "0792add90bfa0ecd0cab687d6fcf91f33456183c38676e3b2ea387311ea84a01"
+      "sha256": "14764ea257ac41edbc6b9f6020e49501f65501bf2a072d71052f2f9a5dbbe781"
     },
     {
       "path": "skills/chrome-devtools-intake/SKILL.md",

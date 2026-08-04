@@ -1,0 +1,173 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "@ChromeDevTools fixture",
+      "version": "0.1.0"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2026-06-05T12:00:00.000Z",
+        "id": "page_1",
+        "title": "http://localhost:4173/dashboard?session=page-secret",
+        "pageTimings": {}
+      }
+    ],
+    "entries": [
+      {
+        "pageref": "page_1",
+        "startedDateTime": "2026-06-05T12:00:01.000Z",
+        "time": 31,
+        "_resourceType": "xhr",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "loadAccounts",
+                "url": "http://localhost:4173/src/api/accounts.ts",
+                "lineNumber": 22,
+                "columnNumber": 8
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:4173/api/accounts?access_token=har-secret-token&limit=25",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Authorization",
+              "value": "Bearer live-har-token"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "access_token",
+              "value": "har-secret-token"
+            },
+            {
+              "name": "limit",
+              "value": "25"
+            }
+          ],
+          "headersSize": 120,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "session=live-har-cookie; HttpOnly"
+            }
+          ],
+          "content": {
+            "size": 96,
+            "mimeType": "application/json",
+            "text": "{\"accountId\":\"acct_live\",\"secret\":\"response-body-secret\"}"
+          },
+          "headersSize": 140,
+          "bodySize": 96
+        }
+      },
+      {
+        "pageref": "page_1",
+        "startedDateTime": "2026-06-05T12:00:02.000Z",
+        "time": 58,
+        "_resourceType": "fetch",
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:4173/api/orders",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "X-Api-Key",
+              "value": "sk-live-har-secret"
+            }
+          ],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"customerEmail\":\"ada@example.com\",\"token\":\"sk-live-har-secret\",\"items\":[{\"sku\":\"sku_private\",\"quantity\":2}]}"
+          },
+          "headersSize": 160,
+          "bodySize": 104
+        },
+        "response": {
+          "status": 201,
+          "statusText": "Created",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Location",
+              "value": "http://localhost:4173/api/orders/order_123?token=location-secret"
+            }
+          ],
+          "content": {
+            "size": 54,
+            "mimeType": "application/json",
+            "text": "{\"orderId\":\"order_123\",\"status\":\"created\"}"
+          },
+          "headersSize": 150,
+          "bodySize": 54
+        }
+      },
+      {
+        "pageref": "page_1",
+        "startedDateTime": "2026-06-05T12:00:03.000Z",
+        "time": 12,
+        "_resourceType": "image",
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:4173/assets/logo.png",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "image/png"
+            }
+          ],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "image/png"
+            }
+          ],
+          "content": {
+            "size": 10,
+            "mimeType": "image/png",
+            "text": "image-bytes"
+          },
+          "headersSize": 90,
+          "bodySize": 10
+        }
+      }
+    ]
+  }
+}

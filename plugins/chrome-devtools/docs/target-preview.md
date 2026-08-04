@@ -7,7 +7,7 @@ Target preview helps users confirm which browser target a dry-run command would 
 - `title`: trimmed page title.
 - `origin`: scheme and host.
 - `path`: path with sensitive query values removed.
-- `profileLabel`: friendly profile name such as `Codex`, `THB`, or `TRR`.
+- `profileLabel`: friendly profile name such as `Codex`, `Codex`, or `Codex`.
 - `lastSeenAt`: recency timestamp or relative age.
 - `matchReason`: why this target was selected.
 

@@ -720,8 +720,6 @@ function normalizeRouteProfileLabel(value: string | undefined, connectionMode: L
   if (!trimmed) return connectionMode === "isolated" ? "isolated" : "unknown";
   const lower = trimmed.toLowerCase();
   if (lower === "codex") return "Codex";
-  return value.trim();
-  if (lower === "thb") return "THB";
   if (lower === "openai-agent") return "openai-agent";
   return trimmed;
 }

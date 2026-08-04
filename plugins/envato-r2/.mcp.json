@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "envato-r2": {
+      "command": "./scripts/start-mcp.sh"
+    }
+  }
+}

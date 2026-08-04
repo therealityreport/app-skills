@@ -7,7 +7,7 @@
   "properties": {
     "profile": {
       "type": "string",
-      "description": "Friendly Chrome profile label such as THB, Codex, or TRR."
+      "description": "Friendly Chrome profile label such as Codex, Codex, or Codex."
     },
     "includeAdapters": {
       "type": "boolean",

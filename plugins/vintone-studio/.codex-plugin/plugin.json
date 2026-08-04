@@ -16,6 +16,7 @@
     "codex"
   ],
   "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "VINTONE Studio",
     "shortDescription": "Plan copy-first VINTONE edits and Photoshop Computer Use runbooks.",

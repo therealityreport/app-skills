@@ -1,0 +1,15 @@
+{
+  "id": "basic",
+  "createdAt": "2026-06-05T12:00:00.000Z",
+  "mode": "local",
+  "target": {
+    "source": "manual",
+    "scopeStatus": "selected",
+    "title": "Fixture dashboard",
+    "url": "http://localhost:3000/dashboard"
+  },
+  "symptom": "fixture dashboard API inventory",
+  "evidence": [],
+  "hypotheses": [],
+  "actions": []
+}

@@ -1,0 +1,194 @@
+{
+  "chrome_health": {
+    "profile": "Codex",
+    "includeAdapters": true,
+    "includeRepairHints": true
+  },
+  "chrome_targets": {
+    "profile": "Codex",
+    "query": "localhost",
+    "limit": 10,
+    "includeInactive": false
+  },
+  "tab_snapshot": {
+    "target": "active",
+    "profile": "Codex",
+    "include": ["console", "network", "dom", "screenshot"],
+    "dryRun": true
+  },
+  "debug_bundle_create": {
+    "target": "active",
+    "source": "dry-run",
+    "include": ["console", "network", "timeline", "fingerprints"],
+    "redact": true,
+    "maxItems": 200
+  },
+  "debug_bundle_read": {
+    "bundle": "test/fixtures/debug-run/basic",
+    "section": "summary",
+    "limit": 50
+  },
+  "debug_bundle_redact": {
+    "bundle": "test/fixtures/redaction/sensitive",
+    "policy": "default",
+    "write": false
+  },
+  "api_calls_collect": {
+    "target": "active",
+    "source": "dry-run",
+    "includeCurl": true,
+    "limit": 100
+  },
+  "api_call_to_curl": {
+    "run": "test/fixtures/debug-run/basic",
+    "apiCall": "api-call-1",
+    "shell": "posix"
+  },
+  "api_response_read": {
+    "run": "test/fixtures/debug-run/basic",
+    "apiCall": "api-call-1",
+    "includeBody": false,
+    "maxBodyBytes": 0
+  },
+  "debug_run_compare": {
+    "baseline": "test/fixtures/debug-run/failing",
+    "candidate": "test/fixtures/debug-run/fixed",
+    "include": ["api", "console", "screenshot"],
+    "format": "summary"
+  },
+  "context7_doctor": {
+    "library": "chrome-devtools-protocol",
+    "includeSchemaDrift": true,
+    "strict": false
+  },
+  "upstream_mcp_doctor": {
+    "strict": false,
+    "expectedVersion": "1.2.0",
+    "includeCategories": true
+  },
+  "list_network_requests": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "get_network_request": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "requestId": "request_1",
+    "dryRun": true
+  },
+  "list_console_messages": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "take_snapshot": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "take_screenshot": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "lighthouse_audit": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "performance_start_trace": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "performance_stop_trace": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "performance_analyze_insight": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "dryRun": true
+  },
+  "take_heapsnapshot": {
+    "routeToken": "route_demo",
+    "pageId": "page_1",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "dryRun": true
+  },
+  "get_heapsnapshot_summary": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "dryRun": true
+  },
+  "get_heapsnapshot_details": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "filterName": "objectsRetainedByDetachedDomNodes",
+    "pageSize": 50,
+    "dryRun": true
+  },
+  "get_heapsnapshot_class_nodes": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "id": 1,
+    "dryRun": true
+  },
+  "get_heapsnapshot_retainers": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "nodeId": 1,
+    "dryRun": true
+  },
+  "close_heapsnapshot": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/final.heapsnapshot",
+    "dryRun": true
+  },
+  "get_heapsnapshot_retaining_paths": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "nodeId": 1,
+    "maxDepth": 5,
+    "dryRun": true
+  },
+  "get_heapsnapshot_edges": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "nodeId": 1,
+    "dryRun": true
+  },
+  "get_heapsnapshot_dominators": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "nodeId": 1,
+    "dryRun": true
+  },
+  "compare_heapsnapshots": {
+    "routeToken": "route_demo",
+    "baseFilePath": "test/fixtures/memory/baseline.heapsnapshot",
+    "currentFilePath": "test/fixtures/memory/final.heapsnapshot",
+    "dryRun": true
+  },
+  "get_heapsnapshot_duplicate_strings": {
+    "routeToken": "route_demo",
+    "filePath": "test/fixtures/memory/final.heapsnapshot",
+    "pageSize": 20,
+    "dryRun": true
+  },
+  "webmcp_tools_list": {
+    "source": "fixture",
+    "fixture": "test/fixtures/experimental/webmcp-tools.json",
+    "chromeVersion": 149,
+    "flagsAvailable": true,
+    "execute": false
+  },
+  "third_party_tools_list": {
+    "source": "fixture",
+    "fixture": "test/fixtures/experimental/third-party-tools.json",
+    "flagsAvailable": "unknown",
+    "execute": false
+  }
+}

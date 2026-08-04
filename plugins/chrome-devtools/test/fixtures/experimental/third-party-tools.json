@@ -1,0 +1,37 @@
+{
+  "pageUrl": "https://app.example.test/dashboard?token=secret-token&panel=react",
+  "thirdPartyTools": [
+    {
+      "id": "react-profiler.inspect",
+      "name": "react.inspectComponent",
+      "title": "Inspect React component",
+      "description": "Inspect a selected component exposed by a third-party page tool.",
+      "provider": {
+        "id": "react-devtools",
+        "name": "React Developer Tools",
+        "origin": "chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/panel.html"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["componentId"],
+        "properties": {
+          "componentId": {
+            "type": "string",
+            "default": "CheckoutForm"
+          },
+          "authToken": {
+            "type": "string",
+            "examples": ["Bearer sensitive-live-token"]
+          },
+          "filters": {
+            "type": "object",
+            "default": {
+              "sessionId": "session=abc123",
+              "visible": true
+            }
+          }
+        }
+      }
+    }
+  ]
+}

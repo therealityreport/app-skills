@@ -1,0 +1,11 @@
+: fixture keepalive
+id: super-sensitive-event-id
+event: auth-refresh
+retry: 5000
+data: {"token":"sk-live-sse-secret","user":{"email":"ada@example.com"},"expiresIn":3600}
+
+event: inventory-update
+data: {"items":[
+data: {"id":"blue-widget","name":"Ada Lovelace","quantity":2}]}
+
+data: plain text payload with sk-live-sse-secret and ada@example.com hidden by metadata summary

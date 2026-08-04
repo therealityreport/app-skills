@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vintone-studio": {
+      "command": "./scripts/start-mcp.sh",
+      "args": []
+    }
+  }
+}

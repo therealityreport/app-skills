@@ -1,0 +1,5 @@
+Authorization: Bearer live-token
+Cookie: session=live-cookie
+X-CSRF-Token: csrf-secret
+GET /api/users?token=secret-token
+{"apiKey":"sk-secret","safe":"value"}

@@ -1,0 +1,46 @@
+{
+  "pageUrl": "https://app.example.test/dashboard?session=live-cookie&view=orders",
+  "chromeVersion": 149,
+  "flagsAvailable": true,
+  "requiredFlags": ["webmcp-page-tools"],
+  "webmcpTools": [
+    {
+      "id": "webmcp.weather.search",
+      "name": "weather.search",
+      "title": "Search weather",
+      "description": "Search app-provided weather data.",
+      "provider": {
+        "name": "Example App WebMCP",
+        "origin": "https://app.example.test/tools"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["city"],
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "City name",
+            "examples": ["Boston"]
+          },
+          "units": {
+            "type": "string",
+            "enum": ["imperial", "metric"],
+            "default": "imperial"
+          },
+          "apiKey": {
+            "type": "string",
+            "default": "sk-live-webmcp-secret"
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "forecast": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

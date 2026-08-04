@@ -16,6 +16,7 @@
     "codex"
   ],
   "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Envato to R2",
     "shortDescription": "Find Envato assets, diagnose a saved session, and store licensed downloads in R2",

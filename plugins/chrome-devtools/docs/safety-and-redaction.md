@@ -7,7 +7,7 @@ This plugin is designed to collect debugging evidence without leaking browser cr
 - Use isolated upstream Chrome sessions by default.
 - Require explicit route-token ownership for profile-connected modes: `autoConnect`, `browserUrl`, and `wsEndpoint`.
 - Require or strongly warn for URL allow/block policy in profile-connected modes.
-- Use friendly profile labels in visible output, such as `Codex`, `TRR`, `THB`, or `openai-agent`.
+- Use friendly profile labels in visible output, such as `Codex`, `Codex`, `Codex`, or `openai-agent`.
 - Do not expose raw profile folders, email addresses, account identifiers, or browser credential state.
 
 ## Always redact

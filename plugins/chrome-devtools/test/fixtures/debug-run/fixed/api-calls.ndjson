@@ -1,0 +1,1 @@
+{"id":"api-call-1","pageUrl":"http://localhost:3000/dashboard","method":"GET","url":"http://localhost:3000/api/users","resourceType":"fetch","status":200,"requestHeadersRedacted":{"Content-Type":"application/json"},"responseBodyCaptured":"metadata-only","fingerprint":"users-api","likelyApiRole":"data","redactionStatus":"redacted"}
